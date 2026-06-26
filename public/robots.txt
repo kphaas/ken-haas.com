@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ken-haas.com/sitemap.xml

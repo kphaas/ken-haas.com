@@ -1,0 +1,78 @@
+{
+  "name": "Ken Haas",
+  "headline": "Enterprise technology leader building governed AI operations",
+  "summary": "Executive technology leader with 19+ years across cloud, cybersecurity, data, AI, customer success, and enterprise transformation. Ken focuses on practical adoption: aligning people, platforms, partners, and governance so large organizations can turn technology into durable business outcomes.",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/kphaas/"
+  },
+  "filters": ["Leadership", "Architecture", "AI", "Community"],
+  "highlights": [
+    {
+      "label": "Enterprise scale",
+      "text": "Led customer success and transformation programs for financial-market clients across cloud, security, data, AI, and modern work.",
+      "tags": ["Leadership", "Architecture"]
+    },
+    {
+      "label": "Governed AI",
+      "text": "Builds human-in-the-loop automation patterns that keep sensitive work reviewable, auditable, and tied to real outcomes.",
+      "tags": ["Leadership", "AI"]
+    },
+    {
+      "label": "Recognition",
+      "text": "Microsoft Platinum Club 2023 recipient for client growth, partner-led impact, and community leadership.",
+      "tags": ["Leadership", "Community"]
+    },
+    {
+      "label": "Community",
+      "text": "Co-founder of Building Future Enterprises, supporting underrepresented groups navigating corporate and startup paths.",
+      "tags": ["Community", "Leadership"]
+    }
+  ],
+  "timeline": [
+    {
+      "company": "Microsoft",
+      "role": "Managing Director of Customer Success",
+      "period": "2022 - Present",
+      "focus": "Azure, Modern Work, Dynamics, cybersecurity, data, AI, and adoption strategy for top-tier financial-market customers.",
+      "tags": ["Leadership", "AI", "Architecture"]
+    },
+    {
+      "company": "IBM",
+      "role": "Customer Success, Cloud, Security, and Enterprise Architecture Leadership",
+      "period": "2007 - 2022",
+      "focus": "Led cloud, security, data, customer success, technical sales, and enterprise architecture teams across North America and worldwide roles.",
+      "tags": ["Leadership", "Architecture"]
+    },
+    {
+      "company": "Building Future Enterprises",
+      "role": "Co-founder",
+      "period": "2021 - Present",
+      "focus": "Nonprofit community work focused on helping underrepresented groups navigate business, corporate, and startup environments.",
+      "tags": ["Community", "Leadership"]
+    }
+  ],
+  "skills": [
+    "Customer success leadership",
+    "Cloud adoption strategy",
+    "Cybersecurity",
+    "Data and AI transformation",
+    "Enterprise architecture",
+    "Financial-services technology",
+    "Partner-led go-to-market",
+    "Executive stakeholder management",
+    "Human-in-the-loop AI governance",
+    "Team building and coaching"
+  ],
+  "education": [
+    "MBA, University of North Carolina Kenan-Flagler Business School",
+    "BS, Business Administration and Computer Science, Furman University"
+  ],
+  "credentials": [
+    "CISSP",
+    "Open Group IT Architect Expert",
+    "Open Group IT Specialist Expert",
+    "AWS Certified Solutions Architect - Associate",
+    "Microsoft Certified: Azure Fundamentals",
+    "ITIL Foundation"
+  ]
+}
