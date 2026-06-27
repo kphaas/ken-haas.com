@@ -3,6 +3,7 @@ import re
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,6 +42,17 @@ class SiteContractTest(unittest.TestCase):
         self.assertNotRegex(text, r"\b\d{3}[-.) ]*\d{3}[-. ]*\d{4}\b")
         self.assertNotIn("@gmail.com", text)
         self.assertIn("https://www.linkedin.com/in/kphaas/", text)
+        self.assertIn("https://at-0.com/", text)
+        self.assertGreaterEqual(len(data["lenses"]), 4)
+        self.assertTrue(any(lens["id"] == "governance" for lens in data["lenses"]))
+
+    def test_interactive_resume_and_at0_link_exist(self):
+        index = (PUBLIC / "index.html").read_text()
+        resume = (PUBLIC / "resume" / "index.html").read_text()
+        at0 = (PUBLIC / "at-0" / "index.html").read_text()
+        self.assertIn("data-lens-explorer", index)
+        self.assertIn("data-lens-explorer", resume)
+        self.assertIn("Visit at-0.com", at0)
 
     def test_local_assets_resolve(self):
         for html_path in PUBLIC.glob("**/index.html"):
@@ -48,7 +60,8 @@ class SiteContractTest(unittest.TestCase):
             parser.feed(html_path.read_text())
             for asset in parser.scripts + parser.images:
                 if asset.startswith("/"):
-                    self.assertTrue((PUBLIC / asset.lstrip("/")).exists(), f"{html_path}: {asset}")
+                    path = urlsplit(asset).path
+                    self.assertTrue((PUBLIC / path.lstrip("/")).exists(), f"{html_path}: {asset}")
 
     def test_sitemap_covers_pages(self):
         sitemap = (PUBLIC / "sitemap.xml").read_text()

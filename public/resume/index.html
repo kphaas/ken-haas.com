@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume - Ken Haas</title>
-    <meta name="description" content="Public-safe dynamic resume for Ken Haas.">
+    <title>Interactive Resume - Ken Haas</title>
+    <meta name="description" content="Interactive public resume for Ken Haas focused on transformation, AI governance, architecture, and community leadership.">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/assets/site.css">
+    <link rel="stylesheet" href="/assets/site.css?v=2">
   </head>
   <body>
     <header class="site-header">
@@ -21,11 +21,21 @@
       </nav>
     </header>
     <main>
-      <section class="page-title">
-        <h1>Resume</h1>
-        <p>Public-safe career signal, organized by leadership, architecture, AI, and community themes.</p>
+      <section class="page-title" data-lens-explorer>
+        <h1>Interactive resume</h1>
+        <p>Use the controls to shift the evidence by leadership lens, then filter highlights and timeline by theme.</p>
+        <div class="resume-controls" data-lens-controls aria-label="Resume lens"></div>
+        <article class="lens-panel wide">
+          <h2 data-lens-title></h2>
+          <p data-lens-summary></p>
+          <ul class="rule-list tight" data-lens-points></ul>
+        </article>
       </section>
-      <section class="section">
+      <section class="section" data-resume-root>
+        <div class="section-head">
+          <h2>Evidence explorer</h2>
+          <p>Every item below is public-safe and derived from the resume, public LinkedIn metadata, and readable walking-deck themes.</p>
+        </div>
         <div class="resume-controls" data-resume-controls aria-label="Resume filters"></div>
         <div class="resume-layout">
           <div>
@@ -42,7 +52,7 @@
         <div class="section">
           <div class="section-head">
             <h2>Skills and credentials</h2>
-            <p>Kept intentionally concise for a public site. Full role-specific resumes should remain request-scoped.</p>
+            <p>Concise public signal. Role-specific resume exports should stay request-scoped.</p>
           </div>
           <ul class="skill-list" data-skills></ul>
         </div>
@@ -54,6 +64,6 @@
         <span><a href="/contact/">Contact</a></span>
       </div>
     </footer>
-    <script src="/assets/site.js" defer></script>
+    <script src="/assets/site.js?v=3" defer></script>
   </body>
 </html>

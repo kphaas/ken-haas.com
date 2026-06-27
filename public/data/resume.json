@@ -1,31 +1,100 @@
 {
   "name": "Ken Haas",
-  "headline": "Enterprise technology leader building governed AI operations",
-  "summary": "Executive technology leader with 19+ years across cloud, cybersecurity, data, AI, customer success, and enterprise transformation. Ken focuses on practical adoption: aligning people, platforms, partners, and governance so large organizations can turn technology into durable business outcomes.",
+  "headline": "Enterprise technology leader building AI-enabled transformation with governance",
+  "summary": "Executive technology leader with 19+ years across cloud, cybersecurity, data, AI, customer success, and enterprise transformation. Ken builds adoption systems where people, platforms, partners, and governance turn technology into measurable business outcomes.",
   "links": {
-    "linkedin": "https://www.linkedin.com/in/kphaas/"
+    "linkedin": "https://www.linkedin.com/in/kphaas/",
+    "at0": "https://at-0.com/"
   },
-  "filters": ["Leadership", "Architecture", "AI", "Community"],
+  "stats": [
+    {
+      "value": "19+",
+      "label": "years across cloud, cyber, data, AI, and customer success"
+    },
+    {
+      "value": "$600M",
+      "label": "new cloud commitment after accelerating a prior term"
+    },
+    {
+      "value": "$30M",
+      "label": "partner-program revenue impact tied to Platinum Club recognition"
+    },
+    {
+      "value": "500+",
+      "label": "LinkedIn professional community connections"
+    }
+  ],
+  "filters": ["Transformation", "Governance", "Architecture", "Community"],
+  "lenses": [
+    {
+      "id": "transformation",
+      "label": "Transformation",
+      "title": "Turn enterprise intent into durable adoption",
+      "summary": "Ken's core lane is customer success at enterprise scale: translating executive priorities into cloud, cybersecurity, data, AI, and modern-work adoption with operating cadence and measurable outcomes.",
+      "points": [
+        "Completed a $250M cloud commitment five-year term in three years.",
+        "Grew monthly cloud consumption from $1.8M to $15.5M and helped secure a new $600M commitment.",
+        "Led top-tier financial-market customer success across Azure, Modern Work, Dynamics, security, data, and AI."
+      ],
+      "tags": ["Transformation", "Architecture"]
+    },
+    {
+      "id": "governance",
+      "label": "AI governance",
+      "title": "Use AI where judgment, auditability, and safety stay visible",
+      "summary": "The through-line from enterprise leadership to AT-0 is governed automation: AI systems that accelerate work without hiding approvals, privacy boundaries, runtime truth, or human accountability.",
+      "points": [
+        "Built AT-0 from scratch as a governed AI operating lab.",
+        "Uses human-in-the-loop review for sensitive actions instead of silent mutation.",
+        "Frames privacy, approvals, kill switches, and observability as product requirements."
+      ],
+      "tags": ["Governance", "Transformation"]
+    },
+    {
+      "id": "architecture",
+      "label": "Architecture",
+      "title": "Bridge business outcomes and technical platforms",
+      "summary": "Ken has held leadership, business, and technical roles across hybrid cloud, cybersecurity, mainframe modernization, data fabric, customer success, and enterprise architecture.",
+      "points": [
+        "Advanced more than $150M in software revenue as a senior enterprise cloud and security architect.",
+        "Built cloud and security go-to-market plays across Red Hat, LinuxONE, and hybrid cloud.",
+        "Holds CISSP, Open Group architecture credentials, AWS Solutions Architect Associate, and Azure Fundamentals."
+      ],
+      "tags": ["Architecture", "Transformation"]
+    },
+    {
+      "id": "community",
+      "label": "Community",
+      "title": "Lead with empathy, inclusion, and practical access",
+      "summary": "Ken's walking-deck themes are consistent: earn trust with empathy, create clarity of vision, include more perspectives, and sponsor people into confidence and results.",
+      "points": [
+        "Co-founded Building Future Enterprises in 2021.",
+        "Led and supported D&I, allyship, and neurodiversity activities.",
+        "Mentors underrepresented groups navigating corporate and startup environments."
+      ],
+      "tags": ["Community", "Governance"]
+    }
+  ],
   "highlights": [
     {
-      "label": "Enterprise scale",
-      "text": "Led customer success and transformation programs for financial-market clients across cloud, security, data, AI, and modern work.",
-      "tags": ["Leadership", "Architecture"]
+      "label": "Enterprise transformation",
+      "text": "Leads customer success programs that connect executive priorities, partner motion, and technology adoption across regulated financial-services environments.",
+      "tags": ["Transformation", "Architecture"]
     },
     {
-      "label": "Governed AI",
-      "text": "Builds human-in-the-loop automation patterns that keep sensitive work reviewable, auditable, and tied to real outcomes.",
-      "tags": ["Leadership", "AI"]
+      "label": "Governed AI builder",
+      "text": "Built AT-0 from scratch to prove AI capability through real product boundaries: approvals, privacy, memory, domain workflows, and operator review.",
+      "tags": ["Governance", "Transformation"]
     },
     {
-      "label": "Recognition",
-      "text": "Microsoft Platinum Club 2023 recipient for client growth, partner-led impact, and community leadership.",
-      "tags": ["Leadership", "Community"]
+      "label": "Platform depth",
+      "text": "Experienced across Azure, AWS, IBM, Google Cloud, hybrid cloud, cybersecurity, data, AI, containers, Kubernetes, and mainframe modernization.",
+      "tags": ["Architecture", "Transformation"]
     },
     {
-      "label": "Community",
-      "text": "Co-founder of Building Future Enterprises, supporting underrepresented groups navigating corporate and startup paths.",
-      "tags": ["Community", "Leadership"]
+      "label": "Leadership principles",
+      "text": "Walking-deck themes: earn trust with empathy, incubate innovation through inclusion, produce clarity of vision, and keep improving by one percent.",
+      "tags": ["Community", "Governance"]
     }
   ],
   "timeline": [
@@ -33,35 +102,44 @@
       "company": "Microsoft",
       "role": "Managing Director of Customer Success",
       "period": "2022 - Present",
-      "focus": "Azure, Modern Work, Dynamics, cybersecurity, data, AI, and adoption strategy for top-tier financial-market customers.",
-      "tags": ["Leadership", "AI", "Architecture"]
+      "focus": "Leads customer success for top-tier financial-market clients across Azure, Modern Work, Dynamics, cybersecurity, data, AI, partner adoption, and business value realization.",
+      "tags": ["Transformation", "Governance", "Architecture"]
     },
     {
       "company": "IBM",
       "role": "Customer Success, Cloud, Security, and Enterprise Architecture Leadership",
       "period": "2007 - 2022",
-      "focus": "Led cloud, security, data, customer success, technical sales, and enterprise architecture teams across North America and worldwide roles.",
-      "tags": ["Leadership", "Architecture"]
+      "focus": "Held technical, sales, customer success, architecture, and leadership roles spanning hybrid cloud, cybersecurity, data, containers, Kubernetes, and financial-services transformation.",
+      "tags": ["Transformation", "Architecture"]
+    },
+    {
+      "company": "AT-0",
+      "role": "Founder and builder",
+      "period": "2024 - Present",
+      "focus": "Built a governed AI operating lab from scratch to demonstrate practical AI capability, operator workflows, approval gates, memory, privacy boundaries, and domain-specific agents.",
+      "tags": ["Governance", "Architecture"]
     },
     {
       "company": "Building Future Enterprises",
       "role": "Co-founder",
       "period": "2021 - Present",
-      "focus": "Nonprofit community work focused on helping underrepresented groups navigate business, corporate, and startup environments.",
-      "tags": ["Community", "Leadership"]
+      "focus": "Supports underrepresented groups navigating business, corporate, and startup paths through mentorship, access, and practical community leadership.",
+      "tags": ["Community", "Governance"]
     }
   ],
   "skills": [
+    "AI-enabled transformation",
     "Customer success leadership",
     "Cloud adoption strategy",
     "Cybersecurity",
-    "Data and AI transformation",
+    "Data and AI platforms",
     "Enterprise architecture",
     "Financial-services technology",
     "Partner-led go-to-market",
     "Executive stakeholder management",
     "Human-in-the-loop AI governance",
-    "Team building and coaching"
+    "Team building and coaching",
+    "Community and inclusion leadership"
   ],
   "education": [
     "MBA, University of North Carolina Kenan-Flagler Business School",
@@ -74,5 +152,45 @@
     "AWS Certified Solutions Architect - Associate",
     "Microsoft Certified: Azure Fundamentals",
     "ITIL Foundation"
+  ],
+  "at0": {
+    "url": "https://at-0.com/",
+    "headline": "AT-0 is the build proof: governed AI from blank page to working operating system.",
+    "summary": "AT-0 demonstrates Ken's AI capability by turning leadership principles into a real product system: human-in-the-loop agents, domain-specific workflows, memory review, privacy boundaries, runtime checks, and Cloudflare-hosted public surfaces.",
+    "capabilities": [
+      {
+        "label": "Operator control",
+        "text": "Helm-style UI patterns for Ask, review, inbox, memory, and operator handoff."
+      },
+      {
+        "label": "Governed agents",
+        "text": "Approval gates, safety belts, kill switches, and no silent sensitive actions."
+      },
+      {
+        "label": "Domain apps",
+        "text": "Family, financial, medical, talent, print, data-source, and Beacon-style workflows with explicit boundaries."
+      },
+      {
+        "label": "Production habits",
+        "text": "Tests, PR gates, deployment checks, runtime truth, observability, and rollback paths."
+      }
+    ]
+  },
+  "writing": [
+    {
+      "title": "Got Mentors?",
+      "source": "LinkedIn article",
+      "url": "https://www.linkedin.com/pulse/got-mentors-kenneth-haas"
+    },
+    {
+      "title": "Agile DevOps in Financial Services",
+      "source": "LinkedIn article",
+      "url": "https://www.linkedin.com/pulse/important-have-agile-devops-program-financial-services-kenneth-haas"
+    },
+    {
+      "title": "New era of computing in banking",
+      "source": "LinkedIn article",
+      "url": "https://www.linkedin.com/pulse/has-your-bank-embrace-new-era-computing-kenneth-haas"
+    }
   ]
 }

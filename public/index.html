@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ken Haas - Enterprise Technology Leader</title>
-    <meta name="description" content="Ken Haas is an enterprise technology leader focused on cloud, cybersecurity, customer success, and governed AI operations.">
+    <title>Ken Haas - AI Transformation and Governance Leader</title>
+    <meta name="description" content="Ken Haas is an enterprise technology leader focused on AI-enabled transformation, governance, cloud, cybersecurity, customer success, and AT-0.">
     <meta property="og:title" content="Ken Haas">
-    <meta property="og:description" content="Enterprise technology leader building governed AI operations.">
+    <meta property="og:description" content="Enterprise technology leader building AI-enabled transformation with governance.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ken-haas.com/">
     <meta property="og:image" content="https://ken-haas.com/social-card.svg">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="/assets/site.css">
+    <link rel="stylesheet" href="/assets/site.css?v=2">
   </head>
   <body>
     <header class="site-header">
@@ -28,72 +28,119 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero hero-with-portrait">
         <div>
           <h1>Ken Haas</h1>
-          <p class="hero-copy">Enterprise technology leader building governed AI operations across cloud, cybersecurity, customer success, and financial-services transformation.</p>
+          <p class="hero-copy">Enterprise technology leader turning cloud, cybersecurity, data, and AI into governed transformation for financial-services customers.</p>
           <div class="hero-actions">
             <a class="button" href="https://www.linkedin.com/in/kphaas/">Connect on LinkedIn</a>
-            <a class="button secondary" href="/resume/">View resume</a>
+            <a class="button secondary" href="/at-0/">Explore AT-0</a>
           </div>
+          <ul class="stats-row" data-stats></ul>
         </div>
-        <aside class="hero-panel" aria-label="Recognition">
-          <img class="profile-photo" src="/assets/ken-haas-profile.png" alt="Ken Haas headshot">
-          <p class="metric">Selected proof point</p>
-          <h2 class="proof-title">Microsoft Platinum Club 2023</h2>
-          <p class="proof-text">Recognized for client growth, partner-led impact, and community leadership.</p>
-          <img class="proof-image" src="/assets/platinum-club-2023.png" alt="Microsoft Platinum Club 2023 recognition graphic">
-        </aside>
+        <figure class="portrait-stage">
+          <span class="ring one" aria-hidden="true"></span>
+          <span class="ring two" aria-hidden="true"></span>
+          <img class="portrait-photo" src="/assets/ken-haas-profile.png" alt="Ken Haas headshot">
+        </figure>
       </section>
 
-      <section class="band" id="resume">
-        <div class="section">
-          <div class="section-head">
-            <h2>Dynamic resume</h2>
-            <p>A public-safe resume view focused on leadership themes, platform depth, community work, and AI governance.</p>
-          </div>
-          <div class="resume-controls" data-resume-controls aria-label="Resume filters"></div>
-          <div class="grid" data-highlights></div>
-          <div class="hero-actions">
-            <a class="button secondary" href="/resume/">Open full resume</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="at-0">
-        <div class="split">
+      <section class="resume-preview band" id="resume" data-lens-explorer>
+        <div class="section split resume-preview-grid">
           <div>
-            <h2>AT-0</h2>
-            <p class="large-copy">AT-0 is Ken's operating lab for practical, governed AI: automation that keeps human judgment, privacy, auditability, and production readiness in the loop.</p>
+            <h2>Interactive resume</h2>
+            <p class="large-copy">Choose a lens to see the career evidence that matters for transformation, AI governance, architecture, or community leadership.</p>
+            <div class="resume-controls" data-lens-controls aria-label="Resume lens"></div>
+            <article class="lens-panel">
+              <h3 data-lens-title></h3>
+              <p data-lens-summary></p>
+              <ul class="rule-list tight" data-lens-points></ul>
+            </article>
           </div>
-          <ul class="rule-list">
-            <li>Human-in-the-loop workflows before silent mutation.</li>
-            <li>Clear boundaries around sensitive data, approvals, and real-world actions.</li>
-            <li>Production habits: tests, deploy checks, runtime truth, and rollback paths.</li>
-          </ul>
+          <aside class="resume-sheet" aria-label="Resume preview">
+            <div class="sheet-head">
+              <strong>KEN HAAS</strong>
+              <span>AI transformation / governance / customer success</span>
+            </div>
+            <div class="sheet-grid">
+              <div>
+                <p class="metric">Core strengths</p>
+                <ul>
+                  <li>Executive stakeholder alignment</li>
+                  <li>Cloud and AI adoption strategy</li>
+                  <li>Human-in-the-loop governance</li>
+                  <li>Financial-services transformation</li>
+                </ul>
+              </div>
+              <div>
+                <p class="metric">Proof points</p>
+                <ul>
+                  <li>Microsoft Platinum Club 2023</li>
+                  <li>$600M cloud commitment</li>
+                  <li>AT-0 built from scratch</li>
+                  <li>Building Future Enterprises co-founder</li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section at0-home" id="at-0">
+        <div class="split">
+          <div class="at0-mark-panel">
+            <strong>AT-0</strong>
+            <div class="architecture-lines" aria-hidden="true"></div>
+          </div>
+          <div>
+            <h2>AT-0: built from scratch</h2>
+            <p class="large-copy">AT-0 is the proof of AI capability: a governed operating lab with agents, memory, approvals, domain workflows, runtime checks, and a public Cloudflare site.</p>
+            <div class="hero-actions">
+              <a class="button" href="/at-0/">See what Ken built</a>
+              <a class="button secondary" href="https://at-0.com/">Visit at-0.com</a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="band">
         <div class="section">
           <div class="section-head">
-            <h2>Professional focus</h2>
-            <p>What belongs on this site beyond a resume: selected work, leadership point of view, community work, talks, writing, and contact paths.</p>
+            <h2>Enterprise leadership experience</h2>
+            <p>Resume, LinkedIn, and walking-deck themes converge on one story: customer success leadership at the intersection of business value, technical platforms, empathy, and execution.</p>
           </div>
-          <div class="grid">
-            <article class="card">
-              <h3>Enterprise leadership</h3>
-              <p>Customer success, executive alignment, partner-led adoption, and transformation programs for large regulated organizations.</p>
+          <div class="signal-list">
+            <article>
+              <span></span>
+              <h3>Transformation at scale</h3>
+              <p>Cloud adoption, customer success, executive alignment, partner motion, and multi-year growth in regulated financial-services environments.</p>
             </article>
-            <article class="card">
-              <h3>Architecture and governance</h3>
-              <p>Cloud, security, data, and AI systems shaped around adoption, operability, accountability, and business outcomes.</p>
+            <article>
+              <span></span>
+              <h3>AI with governance</h3>
+              <p>Practical automation where approvals, privacy, safety, memory review, and observability are first-order design constraints.</p>
             </article>
-            <article class="card">
-              <h3>Community work</h3>
-              <p>Building Future Enterprises, mentoring, allyship, neurodiversity, and practical access paths into business and technology.</p>
+            <article>
+              <span></span>
+              <h3>Clarity through architecture</h3>
+              <p>Hybrid cloud, cybersecurity, data, AI, containers, Kubernetes, mainframe modernization, and customer value realization.</p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Selected proof points</h2>
+          <p>Recognition and published thinking that show the leadership pattern behind the work.</p>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-card">
+            <img class="proof-image" src="/assets/platinum-club-2023.png" alt="Microsoft Platinum Club 2023 recognition graphic">
+            <h3>Microsoft Platinum Club 2023</h3>
+            <p>Recognition tied to client growth, partner-program impact, allyship, and neurodiversity leadership.</p>
+          </article>
+          <div class="grid" data-writing></div>
         </div>
       </section>
     </main>
@@ -101,9 +148,9 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <span>© 2026 Ken Haas</span>
-        <span>Cloudflare-hosted personal career site.</span>
+        <span>AI transformation, governance, and AT-0.</span>
       </div>
     </footer>
-    <script src="/assets/site.js" defer></script>
+    <script src="/assets/site.js?v=3" defer></script>
   </body>
 </html>
