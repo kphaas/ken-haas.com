@@ -73,6 +73,8 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("data-resume-modal", resume)
         self.assertIn("data-resume-dialog", resume)
         self.assertIn("Career Path: From enterprise architecture to AI transformation leadership", timeline)
+        self.assertIn("IBM: enterprise cloud and security architecture", timeline)
+        self.assertIn("Microsoft: Managing Director of Customer Success", timeline)
         self.assertIn("Walking-deck themes", timeline)
         self.assertIn("Empathy builds trust", timeline)
         self.assertIn("Visit at-0.com", at0)
