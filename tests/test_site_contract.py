@@ -58,6 +58,7 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn('class="button secondary at0-button" href="/at-0/"', index)
         self.assertIn("AI-first leadership", index)
         self.assertIn("AI-first transformation capability", index)
+        self.assertIn("Ken's AI-first transformation capability", index)
         self.assertLess(index.index("AI-first"), index.index("$850M"))
         self.assertIn("large financial enterprises", index)
         self.assertIn("Managing Director seat at Microsoft", index)
