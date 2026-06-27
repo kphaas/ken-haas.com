@@ -4,12 +4,12 @@
   "compatibility_date": "2026-06-26",
   "routes": [
     {
-      "pattern": "ken-haas.com",
-      "custom_domain": true
+      "pattern": "ken-haas.com/*",
+      "zone_name": "ken-haas.com"
     },
     {
-      "pattern": "www.ken-haas.com",
-      "custom_domain": true
+      "pattern": "www.ken-haas.com/*",
+      "zone_name": "ken-haas.com"
     }
   ],
   "assets": {

@@ -94,6 +94,12 @@ class SiteContractTest(unittest.TestCase):
         for route in ["", "resume/", "at-0/", "community/", "contact/"]:
             self.assertIn(f"https://ken-haas.com/{route}", sitemap)
 
+    def test_cloudflare_routes_existing_dns(self):
+        config = (ROOT / "wrangler.jsonc").read_text()
+        self.assertIn('"pattern": "ken-haas.com/*"', config)
+        self.assertIn('"pattern": "www.ken-haas.com/*"', config)
+        self.assertNotIn('"custom_domain": true', config)
+
 
 if __name__ == "__main__":
     unittest.main()
