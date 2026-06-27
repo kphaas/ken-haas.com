@@ -1111,6 +1111,28 @@ a {
   color: var(--muted);
 }
 
+.domain-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -12px 0 28px;
+}
+
+.domain-cloud span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  padding: 10px 14px;
+  color: var(--ink);
+  font-size: 0.94rem;
+  font-weight: 760;
+  box-shadow: 0 14px 32px rgba(23, 23, 23, 0.05);
+}
+
+.at0-coverage .grid {
+  margin-top: 22px;
+}
+
 .proof-grid {
   display: grid;
   grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);

@@ -184,31 +184,31 @@
   "at0": {
     "url": "https://at-0.com/",
     "headline": "AT-0 is the build proof: private AI from project to future company.",
-    "summary": "AT-0, pronounced Auto, demonstrates Ken's AI capability through a real product system: persistent memory, specialized agents, domain isolation, human approval, private infrastructure, cost management, security-first design, and no data resale.",
+    "summary": "AT-0, pronounced Auto, demonstrates Ken's AI capability through a real product system: owner-controlled infrastructure, persistent memory, specialized agents, domain isolation, human approval, cost management, security-first design, and no data resale.",
     "capabilities": [
       {
-        "label": "Private AI",
-        "text": "Big-AI capability shaped around owner-controlled infrastructure, memory, and rules."
+        "label": "Private infrastructure",
+        "text": "Big-AI capability shaped around owner-controlled infrastructure, memory, rules, and no data resale."
       },
       {
-        "label": "Persistent memory",
-        "text": "Working, episodic, and semantic memory so the system does not restart from zero."
+        "label": "Memory architecture",
+        "text": "Working, episodic, and semantic memory patterns so the system does not restart from zero."
       },
       {
-        "label": "Domain isolation",
-        "text": "Family, financial, medical, home, creation, privacy, legal, documents, and calendar domains stay bounded."
+        "label": "Domain model",
+        "text": "Family, financial, medical, home, creation, privacy, legal, documents, calendar, and code contexts stay bounded."
       },
       {
-        "label": "Human approval",
-        "text": "High-stakes actions wait for review so autonomy remains accountable and observable."
+        "label": "Human approval gates",
+        "text": "High-stakes actions wait for review so autonomy remains accountable, observable, and owned."
       },
       {
-        "label": "Cost control",
-        "text": "AI value is managed through usage awareness, governance, and output quality rather than unchecked consumption."
+        "label": "Cost and usage control",
+        "text": "AI value is managed through usage awareness, governance, output quality, and rollout discipline."
       },
       {
-        "label": "Security first",
-        "text": "Private data, domain boundaries, and approval paths are part of the architecture, not afterthoughts."
+        "label": "Security-first governance",
+        "text": "Data privacy, domain boundaries, security posture, and approval paths are part of the architecture."
       }
     ]
   },
