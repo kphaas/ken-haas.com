@@ -66,7 +66,7 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn('href="/at-0/"><img src="/assets/at0-logo.svg"', index)
         self.assertIn("multi-tier infrastructure, data privacy", index)
         self.assertIn("Executive evidence", index)
-        self.assertIn("Career arc", index)
+        self.assertIn("Career path", index)
         self.assertIn("Hands-on AI proof", index)
         self.assertIn("Impact beyond the role", index)
         self.assertIn('href="/community/"', index)
