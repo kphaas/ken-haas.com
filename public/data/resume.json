@@ -1,0 +1,232 @@
+{
+  "name": "Ken Haas",
+  "headline": "Executive IT leader driving impact through AI, cloud, security, transformation, and organizational change",
+  "summary": "Executive technology leader with 19+ years across cloud, cybersecurity, data, AI, customer success, and enterprise transformation. Ken builds adoption systems where people, platforms, partners, governance, and change leadership turn technology into measurable business outcomes.",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/kphaas/",
+    "at0": "https://at-0.com/"
+  },
+  "stats": [
+    {
+      "value": "19+",
+      "label": "years across cloud, cyber, data, AI, and customer success"
+    },
+    {
+      "value": "$850M",
+      "label": "Azure commitment under leadership, with about $17M monthly consumption"
+    },
+    {
+      "value": "$30M",
+      "label": "first-year revenue from a Microsoft FSI program built from scratch"
+    },
+    {
+      "value": "MD/SVP",
+      "label": "target scope across AI, IT operations, and transformation leadership"
+    }
+  ],
+  "filters": ["Transformation", "Governance", "Architecture", "Community"],
+  "lenses": [
+    {
+      "id": "transformation",
+      "label": "Transformation",
+      "title": "Turn enterprise intent into durable adoption",
+      "summary": "Ken's core lane is transformation at enterprise scale: translating executive priorities into cloud, cybersecurity, data, AI, operations, and organizational change with operating cadence and measurable outcomes.",
+      "points": [
+        "Helped Charles River Development transform its application strategy toward the cloud.",
+        "Leads an $850M Azure commitment currently operating at about $17M monthly consumption.",
+        "Led top-tier financial-market customer success across Azure, Modern Work, Dynamics, security, data, AI, adoption strategy, and business value realization."
+      ],
+      "tags": ["Transformation", "Architecture"]
+    },
+    {
+      "id": "governance",
+      "label": "AI governance",
+      "title": "Use AI where judgment, auditability, and safety stay visible",
+      "summary": "The through-line from enterprise leadership to AT0 is responsible enterprise AI: systems that accelerate work without hiding approvals, privacy boundaries, cost control, security posture, runtime truth, or human accountability.",
+      "points": [
+        "Built AT0 from scratch as a governed AI project that can mature into a future company.",
+        "Invested 1,000+ personal hours building AI workflows, agents, domains, memory, and governance patterns.",
+        "Uses human-in-the-loop review for sensitive actions instead of silent mutation.",
+        "Frames privacy, approvals, cost control, security, kill switches, and observability as product requirements."
+      ],
+      "tags": ["Governance", "Transformation"]
+    },
+    {
+      "id": "architecture",
+      "label": "Architecture",
+      "title": "Bridge business outcomes and technical platforms",
+      "summary": "Ken has held leadership, business, and technical roles across hybrid cloud, cybersecurity, mainframe modernization, data fabric, customer success, and enterprise architecture.",
+      "points": [
+        "Advanced more than $150M in software revenue as a senior enterprise cloud and security architect.",
+        "Built cloud and security go-to-market plays across Red Hat, LinuxONE, and hybrid cloud.",
+        "Holds CISSP, Open Group architecture credentials, AWS Solutions Architect Associate, and Azure Fundamentals."
+      ],
+      "tags": ["Architecture", "Transformation"]
+    },
+    {
+      "id": "community",
+      "label": "Community",
+      "title": "Lead with empathy, inclusion, and practical access",
+      "summary": "Ken's walking-deck themes are consistent: earn trust with empathy, create clarity of vision, include more perspectives, and sponsor people into confidence and results.",
+      "points": [
+        "Co-founded Building Future Enterprises in 2021.",
+        "Serves as a board advisor to BESN.TV.",
+        "Led and supported D&I, allyship, and neurodiversity activities.",
+        "Mentors underrepresented groups navigating corporate and startup environments, including a personal lens shaped by dyslexia."
+      ],
+      "tags": ["Community", "Governance"]
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Enterprise transformation",
+      "text": "Leads customer success and transformation programs that connect executive priorities, partner motion, cloud adoption, and organizational change across regulated financial-services environments.",
+      "tags": ["Transformation", "Architecture"]
+    },
+    {
+      "label": "Governed AI builder",
+      "text": "Built AT0 from scratch through 1,000+ personal AI build hours, proving AI capability through approvals, privacy, memory, domains, cost awareness, security, and operator review.",
+      "tags": ["Governance", "Transformation"]
+    },
+    {
+      "label": "Charles River Development",
+      "text": "Helped Charles River Development move application transformation toward the cloud, connecting architecture, adoption, and executive alignment.",
+      "tags": ["Transformation", "Architecture"]
+    },
+    {
+      "label": "Platform depth",
+      "text": "Experienced across Azure, AWS, IBM, Google Cloud, hybrid cloud, cybersecurity, data, AI, containers, Kubernetes, and mainframe modernization.",
+      "tags": ["Architecture", "Transformation"]
+    },
+    {
+      "label": "Leadership principles",
+      "text": "Walking-deck themes: earn trust with empathy, incubate innovation through inclusion, produce clarity of vision, and keep improving by one percent.",
+      "tags": ["Community", "Governance"]
+    }
+  ],
+  "timeline": [
+    {
+      "company": "Microsoft",
+      "role": "Managing Director of Customer Success",
+      "period": "2022 - Present",
+      "focus": "Leads customer success for top-tier financial-market clients across Azure, Modern Work, Dynamics, cybersecurity, data, AI, partner adoption, business value realization, and AI innovation. Current scope includes an $850M Azure commitment operating at about $17M monthly consumption.",
+      "tags": ["Transformation", "Governance", "Architecture"]
+    },
+    {
+      "company": "IBM",
+      "role": "Customer Success, Cloud, Security, and Enterprise Architecture Leadership",
+      "period": "2007 - 2022",
+      "focus": "Held technical, sales, customer success, architecture, and leadership roles spanning hybrid cloud, cybersecurity, data, containers, Kubernetes, and financial-services transformation.",
+      "tags": ["Transformation", "Architecture"]
+    },
+    {
+      "company": "AT0",
+      "role": "Founder and builder",
+      "period": "2024 - Present",
+      "focus": "Built a governed AI project from scratch, with a path toward a future company. The work demonstrates responsible AI, operator workflows, approval gates, memory, privacy, cost management, security-first thinking, and domain-specific agents.",
+      "tags": ["Governance", "Architecture"]
+    },
+    {
+      "company": "BESN.TV",
+      "role": "Board advisor",
+      "period": "2020 - Present",
+      "focus": "Supports media, community, and access work connected to the Black Esports Network.",
+      "tags": ["Community", "Governance"]
+    },
+    {
+      "company": "Building Future Enterprises",
+      "role": "Co-founder",
+      "period": "2021 - Present",
+      "focus": "Supports underrepresented groups navigating business, corporate, and startup paths through mentorship, access, practical community leadership, empathy, and trust.",
+      "tags": ["Community", "Governance"]
+    }
+  ],
+  "skills": [
+    "AI-enabled transformation",
+    "Customer success leadership",
+    "Cloud adoption strategy",
+    "Cybersecurity",
+    "Data and AI platforms",
+    "Enterprise architecture",
+    "Financial-services technology",
+    "Partner-led go-to-market",
+    "Executive stakeholder management",
+    "Managing Director",
+    "SVP IT operations",
+    "Execution leadership",
+    "Thought leadership",
+    "Business value realization",
+    "High-severity escalation resolution",
+    "Agile business process",
+    "Human-in-the-loop AI governance",
+    "Responsible enterprise AI",
+    "AI innovation",
+    "Agent workflows",
+    "AI domain models",
+    "Private AI",
+    "Organizational change",
+    "Cloud cost management",
+    "Team building and coaching",
+    "Community and inclusion leadership"
+  ],
+  "education": [
+    "MBA, University of North Carolina Kenan-Flagler Business School",
+    "BS, Business Administration and Computer Science, Furman University"
+  ],
+  "credentials": [
+    "CISSP",
+    "Open Group IT Architect Expert",
+    "Open Group IT Specialist Expert",
+    "AWS Certified Solutions Architect - Associate",
+    "Microsoft Certified: Azure Fundamentals",
+    "ITIL Foundation"
+  ],
+  "at0": {
+    "url": "https://at-0.com/",
+    "headline": "AT0 is the build proof: private AI from project to future company.",
+    "summary": "AT0, pronounced Auto, demonstrates Ken's AI capability through a real product system: persistent memory, specialized agents, domain isolation, human approval, private infrastructure, cost management, security-first design, and no data resale.",
+    "capabilities": [
+      {
+        "label": "Private AI",
+        "text": "Big-AI capability shaped around owner-controlled infrastructure, memory, and rules."
+      },
+      {
+        "label": "Persistent memory",
+        "text": "Working, episodic, and semantic memory so the system does not restart from zero."
+      },
+      {
+        "label": "Domain isolation",
+        "text": "Family, financial, medical, home, creation, privacy, legal, documents, and calendar domains stay bounded."
+      },
+      {
+        "label": "Human approval",
+        "text": "High-stakes actions wait for review so autonomy remains accountable and observable."
+      },
+      {
+        "label": "Cost control",
+        "text": "AI value is managed through usage awareness, governance, and output quality rather than unchecked consumption."
+      },
+      {
+        "label": "Security first",
+        "text": "Private data, domain boundaries, and approval paths are part of the architecture, not afterthoughts."
+      }
+    ]
+  },
+  "writing": [
+    {
+      "title": "Got Mentors?",
+      "source": "LinkedIn article",
+      "url": "https://www.linkedin.com/pulse/got-mentors-kenneth-haas"
+    },
+    {
+      "title": "Agile DevOps in Financial Services",
+      "source": "LinkedIn article",
+      "url": "https://www.linkedin.com/pulse/important-have-agile-devops-program-financial-services-kenneth-haas"
+    },
+    {
+      "title": "New era of computing in banking",
+      "source": "LinkedIn article",
+      "url": "https://www.linkedin.com/pulse/has-your-bank-embrace-new-era-computing-kenneth-haas"
+    }
+  ]
+}

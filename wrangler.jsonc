@@ -1,0 +1,20 @@
+{
+  "name": "ken-haas-com",
+  "main": "./src/worker.js",
+  "compatibility_date": "2026-06-26",
+  "routes": [
+    {
+      "pattern": "ken-haas.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.ken-haas.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/*"]
+  }
+}
