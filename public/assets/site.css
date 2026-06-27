@@ -400,22 +400,51 @@ a {
 }
 
 .overview-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: minmax(380px, 1.55fr) repeat(3, minmax(0, 1fr));
 }
 
-.overview-grid article {
+.overview-grid .highlight-card {
+  position: relative;
   display: grid;
   align-content: space-between;
-  min-height: 190px;
+  min-height: 210px;
+  overflow: hidden;
   border: 1px solid var(--ink);
   background: var(--panel);
   padding: 22px;
 }
 
+.overview-grid .highlight-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(243, 111, 33, 0.12), transparent 34%),
+    linear-gradient(90deg, rgba(23, 23, 23, 0.06) 1px, transparent 1px);
+  background-size: auto, 22px 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.overview-grid .highlight-card:hover:before {
+  opacity: 1;
+}
+
+.overview-grid .ai-feature {
+  padding-right: 132px;
+  min-height: 230px;
+  background:
+    linear-gradient(135deg, rgba(243, 111, 33, 0.16), rgba(255, 255, 255, 0) 48%),
+    var(--panel);
+}
+
 .highlight-title,
 .overview-grid strong {
+  position: relative;
+  z-index: 1;
   color: inherit;
-  font-size: clamp(2.2rem, 4.4vw, 4rem);
+  font-size: clamp(2.2rem, 3.2vw, 3.25rem);
   font-weight: 780;
   line-height: 0.92;
   font-variant-numeric: tabular-nums;
@@ -424,6 +453,12 @@ a {
 
 .highlight-title:hover {
   color: var(--accent-dark);
+}
+
+.ai-title {
+  display: block;
+  max-width: 240px;
+  font-size: clamp(2.2rem, 4vw, 3.55rem);
 }
 
 .highlight-title.logo-title {
@@ -439,9 +474,78 @@ a {
 }
 
 .overview-grid article > span {
+  position: relative;
+  z-index: 1;
   color: #3f3f3f;
   font-weight: 640;
   line-height: 1.35;
+}
+
+.highlight-card > div:first-child > span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 560px;
+  margin-top: 22px;
+  color: #333333;
+  font-weight: 660;
+  line-height: 1.35;
+}
+
+.highlight-graphic {
+  position: absolute;
+  top: 22px;
+  right: 18px;
+  bottom: 22px;
+  z-index: 1;
+  width: 96px;
+  border-left: 1px solid rgba(23, 23, 23, 0.18);
+}
+
+.highlight-graphic img {
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  width: 82px;
+  height: 82px;
+}
+
+.highlight-graphic:before,
+.highlight-graphic:after,
+.highlight-graphic span {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(184, 71, 16, 0.6);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+}
+
+.highlight-graphic:before {
+  width: 158px;
+  height: 158px;
+  top: 2px;
+  right: -48px;
+}
+
+.highlight-graphic:after {
+  width: 104px;
+  height: 104px;
+  right: -18px;
+  bottom: 10px;
+  border-color: rgba(23, 23, 23, 0.34);
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.highlight-graphic span {
+  width: 56px;
+  height: 56px;
+  right: 46px;
+  bottom: 18px;
+  border-color: rgba(243, 111, 33, 0.72);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .path-grid {
@@ -1308,6 +1412,22 @@ textarea {
     flex-direction: column;
   }
 
+  .overview-grid .ai-feature {
+    grid-column: auto;
+    padding-right: 22px;
+  }
+
+  .highlight-graphic {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    min-height: 120px;
+    border-top: 1px solid rgba(23, 23, 23, 0.18);
+    border-left: 0;
+  }
+
   .portrait-stage.compact {
     min-height: 360px;
   }
@@ -1390,6 +1510,10 @@ textarea {
 
   .home-dek {
     font-size: 1.02rem;
+  }
+
+  .ai-title {
+    font-size: clamp(2.1rem, 12vw, 3.25rem);
   }
 
   .home-hero {
