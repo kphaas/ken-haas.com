@@ -115,7 +115,16 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Cybersecurity and privacy", resume)
         self.assertIn("IBM to MSFT", resume)
         self.assertIn("financial-services sales motion designed from scratch", resume)
-        self.assertIn("BESN.TV", (PUBLIC / "community" / "index.html").read_text())
+        community = (PUBLIC / "community" / "index.html").read_text()
+        self.assertIn("BESN.TV", community)
+        self.assertIn("Community leadership", community)
+        self.assertIn("10+", community)
+        self.assertIn("50+", community)
+        self.assertIn("mentorship, representation, and neurodiversity", community)
+        self.assertIn("underrepresented communities", community)
+        self.assertIn("Building Future Enterprises", community)
+        self.assertIn("partnerships and provide overall business direction", community)
+        self.assertIn("Mentorship, partnerships, advisory", community)
 
     def test_resume_has_ats_keywords(self):
         resume = (PUBLIC / "resume" / "index.html").read_text()
