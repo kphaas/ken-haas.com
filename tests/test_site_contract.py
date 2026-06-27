@@ -57,8 +57,28 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Visit at-0.com", at0)
         self.assertIn("AT0 logo", at0)
         self.assertNotIn("Interactive resume", resume)
-        self.assertIn("Career evidence", resume)
+        self.assertIn("ATS keyword signal", resume)
+        self.assertIn("1,000+ personal hours building with AI", resume)
         self.assertIn("BESN.TV", (PUBLIC / "community" / "index.html").read_text())
+
+    def test_resume_has_ats_keywords(self):
+        resume = (PUBLIC / "resume" / "index.html").read_text()
+        data = (PUBLIC / "data" / "resume.json").read_text()
+        combined = resume + data
+        for phrase in [
+            "Managing Director",
+            "SVP",
+            "executive stakeholder management",
+            "Execution",
+            "thought leadership",
+            "Responsible enterprise AI",
+            "AI governance",
+            "Azure",
+            "cybersecurity",
+            "organizational change",
+            "AT0",
+        ]:
+            self.assertIn(phrase, combined)
 
     def test_local_assets_resolve(self):
         for html_path in PUBLIC.glob("**/index.html"):

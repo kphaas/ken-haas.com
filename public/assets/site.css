@@ -374,6 +374,72 @@ a {
   color: var(--muted);
 }
 
+.resume-story,
+.ai-builder-proof {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.resume-story-main h2,
+.ai-builder-proof h2 {
+  max-width: 860px;
+  margin-top: 12px;
+}
+
+.resume-story-main p:not(.metric),
+.ai-builder-proof p:not(.metric) {
+  max-width: 720px;
+  margin: 22px 0 0;
+  color: #424242;
+  font-size: 1.18rem;
+}
+
+.resume-proof-panel {
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.resume-proof-panel strong {
+  font-size: 1.3rem;
+}
+
+.resume-proof-panel span {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+  color: var(--muted);
+}
+
+.keyword-board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.keyword-board article {
+  min-height: 260px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 24px;
+}
+
+.keyword-board h3 {
+  margin: 0 0 14px;
+  font-size: 1.25rem;
+}
+
+.keyword-board p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .resume-preview-grid {
   align-items: center;
 }
@@ -869,7 +935,10 @@ textarea {
   .split,
   .proof-grid,
   .case-study,
-  .community-grid {
+  .community-grid,
+  .resume-story,
+  .ai-builder-proof,
+  .keyword-board {
     grid-template-columns: 1fr;
   }
 

@@ -1,7 +1,7 @@
 async function loadResume() {
   return new Promise((resolve, reject) => {
     const request = new XMLHttpRequest();
-    request.open("GET", "/data/resume.json?v=3");
+    request.open("GET", "/data/resume.json?v=4");
     request.onload = () => {
       if (request.status < 200 || request.status >= 300) {
         reject(new Error("Unable to load resume data"));

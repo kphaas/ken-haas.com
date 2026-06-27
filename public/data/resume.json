@@ -34,7 +34,7 @@
       "points": [
         "Helped Charles River Development transform its application strategy toward the cloud.",
         "Leads an $850M Azure commitment currently operating at about $17M monthly consumption.",
-        "Led top-tier financial-market customer success across Azure, Modern Work, Dynamics, security, data, and AI."
+        "Led top-tier financial-market customer success across Azure, Modern Work, Dynamics, security, data, AI, adoption strategy, and business value realization."
       ],
       "tags": ["Transformation", "Architecture"]
     },
@@ -45,6 +45,7 @@
       "summary": "The through-line from enterprise leadership to AT0 is responsible enterprise AI: systems that accelerate work without hiding approvals, privacy boundaries, cost control, security posture, runtime truth, or human accountability.",
       "points": [
         "Built AT0 from scratch as a governed AI project that can mature into a future company.",
+        "Invested 1,000+ personal hours building AI workflows, agents, domains, memory, and governance patterns.",
         "Uses human-in-the-loop review for sensitive actions instead of silent mutation.",
         "Frames privacy, approvals, cost control, security, kill switches, and observability as product requirements."
       ],
@@ -84,7 +85,7 @@
     },
     {
       "label": "Governed AI builder",
-      "text": "Built AT0 from scratch to prove AI capability through real product boundaries: approvals, privacy, memory, domain workflows, cost awareness, security, and operator review.",
+      "text": "Built AT0 from scratch through 1,000+ personal AI build hours, proving AI capability through approvals, privacy, memory, domains, cost awareness, security, and operator review.",
       "tags": ["Governance", "Transformation"]
     },
     {
@@ -150,8 +151,19 @@
     "Financial-services technology",
     "Partner-led go-to-market",
     "Executive stakeholder management",
+    "Managing Director",
+    "SVP IT operations",
+    "Execution leadership",
+    "Thought leadership",
+    "Business value realization",
+    "High-severity escalation resolution",
+    "Agile business process",
     "Human-in-the-loop AI governance",
     "Responsible enterprise AI",
+    "AI innovation",
+    "Agent workflows",
+    "AI domain models",
+    "Private AI",
     "Organizational change",
     "Cloud cost management",
     "Team building and coaching",
