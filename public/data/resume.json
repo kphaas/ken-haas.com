@@ -188,11 +188,11 @@
     "capabilities": [
       {
         "label": "Private infrastructure",
-        "text": "Big-AI capability shaped around owner-controlled infrastructure, memory, rules, and no data resale."
+        "text": "Advanced AI capability shaped around owner-controlled infrastructure, memory, rules, and no data resale."
       },
       {
         "label": "Memory architecture",
-        "text": "Working, episodic, and semantic memory patterns so the system does not restart from zero."
+        "text": "Working, episodic, and semantic memory patterns that preserve context across sessions and workflows."
       },
       {
         "label": "Domain model",
@@ -204,7 +204,7 @@
       },
       {
         "label": "Cost and usage control",
-        "text": "AI value is managed through usage awareness, governance, output quality, and rollout discipline."
+        "text": "AI value is managed through usage visibility, governance, output quality, and rollout discipline."
       },
       {
         "label": "Security-first governance",
