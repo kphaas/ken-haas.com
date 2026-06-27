@@ -54,18 +54,22 @@ class SiteContractTest(unittest.TestCase):
         timeline = (PUBLIC / "timeline" / "index.html").read_text()
         at0 = (PUBLIC / "at-0" / "index.html").read_text()
         self.assertIn("Career timeline", index)
-        self.assertIn("AT0 showcases that work", index)
+        self.assertEqual(index.count('class="highlight-title'), 4)
+        self.assertIn('class="button secondary at0-button" href="/at-0/"', index)
+        self.assertIn("AT-0 showcases that work", index)
+        self.assertIn('href="/at-0/"><img src="/assets/at0-logo.svg"', index)
+        self.assertIn("multi-tier infrastructure, data privacy", index)
         self.assertIn("Showcase of my AI work", index)
         self.assertIn("data-lens-explorer", resume)
         self.assertIn("Walking-deck themes", timeline)
         self.assertIn("Empathy builds trust", timeline)
         self.assertIn("Visit at-0.com", at0)
-        self.assertIn("AT0 logo", at0)
+        self.assertIn("AT-0 logo", at0)
         self.assertNotIn("Interactive resume", resume)
         self.assertIn("Operating at the intersection of business and technology", resume)
         self.assertNotIn("Executive resume", resume)
         self.assertNotIn("ATS keyword signal", resume)
-        self.assertIn("1,000+ personal hours building AT0", resume)
+        self.assertIn("1,000+ personal hours building AT-0", resume)
         self.assertIn("BESN.TV", (PUBLIC / "community" / "index.html").read_text())
 
     def test_resume_has_ats_keywords(self):
@@ -83,7 +87,7 @@ class SiteContractTest(unittest.TestCase):
             "Azure",
             "cybersecurity",
             "organizational change",
-            "AT0",
+            "AT-0",
         ]:
             self.assertIn(phrase, combined)
 

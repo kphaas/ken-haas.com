@@ -42,9 +42,9 @@
       "id": "governance",
       "label": "AI governance",
       "title": "Use AI where judgment, auditability, and safety stay visible",
-      "summary": "The through-line from enterprise leadership to AT0 is responsible enterprise AI: systems that accelerate work without hiding approvals, privacy boundaries, cost control, security posture, runtime truth, or human accountability.",
+      "summary": "The through-line from enterprise leadership to AT-0 is responsible enterprise AI: systems that accelerate work without hiding approvals, privacy boundaries, cost control, security posture, runtime truth, or human accountability.",
       "points": [
-        "Built AT0 from scratch as a governed AI project that can mature into a future company.",
+        "Built AT-0 from scratch as a governed AI project that can mature into a future company.",
         "Invested 1,000+ personal hours building AI workflows, agents, domains, memory, and governance patterns.",
         "Uses human-in-the-loop review for sensitive actions instead of silent mutation.",
         "Frames privacy, approvals, cost control, security, kill switches, and observability as product requirements."
@@ -85,7 +85,7 @@
     },
     {
       "label": "Governed AI builder",
-      "text": "Built AT0 from scratch through 1,000+ personal AI build hours, proving AI capability through approvals, privacy, memory, domains, cost awareness, security, and operator review.",
+      "text": "Built AT-0 from scratch through 1,000+ personal AI build hours, proving AI capability through approvals, privacy, memory, domains, cost awareness, security, and operator review.",
       "tags": ["Governance", "Transformation"]
     },
     {
@@ -120,7 +120,7 @@
       "tags": ["Transformation", "Architecture"]
     },
     {
-      "company": "AT0",
+      "company": "AT-0",
       "role": "Founder and builder",
       "period": "2024 - Present",
       "focus": "Built a governed AI project from scratch, with a path toward a future company. The work demonstrates responsible AI, operator workflows, approval gates, memory, privacy, cost management, security-first thinking, and domain-specific agents.",
@@ -183,8 +183,8 @@
   ],
   "at0": {
     "url": "https://at-0.com/",
-    "headline": "AT0 is the build proof: private AI from project to future company.",
-    "summary": "AT0, pronounced Auto, demonstrates Ken's AI capability through a real product system: persistent memory, specialized agents, domain isolation, human approval, private infrastructure, cost management, security-first design, and no data resale.",
+    "headline": "AT-0 is the build proof: private AI from project to future company.",
+    "summary": "AT-0, pronounced Auto, demonstrates Ken's AI capability through a real product system: persistent memory, specialized agents, domain isolation, human approval, private infrastructure, cost management, security-first design, and no data resale.",
     "capabilities": [
       {
         "label": "Private AI",

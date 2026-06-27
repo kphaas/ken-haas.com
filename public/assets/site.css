@@ -324,7 +324,20 @@ a {
 }
 
 .home-hero {
-  min-height: calc(86svh - 74px);
+  min-height: auto;
+  padding: 34px 0 18px;
+}
+
+.home-hero h1 {
+  font-size: clamp(4.3rem, 6.4vw, 6.6rem);
+}
+
+.home-hero .hero-copy {
+  margin-top: 22px;
+}
+
+.home-hero .hero-actions {
+  margin-top: 24px;
 }
 
 .home-dek {
@@ -335,7 +348,48 @@ a {
 }
 
 .portrait-stage.compact {
-  min-height: 480px;
+  min-height: 330px;
+}
+
+.portrait-stage.compact .portrait-photo {
+  width: min(330px, 82%);
+}
+
+.portrait-stage.compact .ring.one {
+  width: 390px;
+  height: 390px;
+}
+
+.portrait-stage.compact .ring.two {
+  width: 500px;
+  height: 500px;
+}
+
+.at0-button {
+  gap: 8px;
+}
+
+.at0-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.home-highlights {
+  padding-top: 12px;
+}
+
+.home-highlights .section-head.simple {
+  display: flex;
+  max-width: none;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.home-highlights .section-head.simple p {
+  max-width: 430px;
+  margin-top: 0;
 }
 
 .overview-grid,
@@ -352,19 +406,39 @@ a {
 .overview-grid article {
   display: grid;
   align-content: space-between;
-  min-height: 230px;
+  min-height: 190px;
   border: 1px solid var(--ink);
   background: var(--panel);
   padding: 22px;
 }
 
+.highlight-title,
 .overview-grid strong {
-  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  color: inherit;
+  font-size: clamp(2.2rem, 4.4vw, 4rem);
+  font-weight: 780;
   line-height: 0.92;
   font-variant-numeric: tabular-nums;
+  text-decoration: none;
 }
 
-.overview-grid span {
+.highlight-title:hover {
+  color: var(--accent-dark);
+}
+
+.highlight-title.logo-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(2rem, 4.2vw, 3.7rem);
+}
+
+.highlight-title.logo-title img {
+  width: 0.88em;
+  height: 0.88em;
+}
+
+.overview-grid article > span {
   color: #3f3f3f;
   font-weight: 640;
   line-height: 1.35;
@@ -1227,6 +1301,11 @@ textarea {
 
   .home-hero {
     min-height: auto;
+  }
+
+  .home-highlights .section-head.simple {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .portrait-stage.compact {
