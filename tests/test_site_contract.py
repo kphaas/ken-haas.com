@@ -61,6 +61,7 @@ class SiteContractTest(unittest.TestCase):
         self.assertLess(index.index("AI-first"), index.index("$850M"))
         self.assertIn("large financial enterprises", index)
         self.assertIn("Managing Director seat at Microsoft", index)
+        self.assertIn("financial-services sales motion", index)
         self.assertIn('href="/at-0/"><img src="/assets/at0-logo.svg"', index)
         self.assertIn("multi-tier infrastructure, data privacy", index)
         self.assertIn("Showcase of my AI work", index)
