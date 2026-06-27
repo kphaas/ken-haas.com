@@ -549,7 +549,7 @@ a {
 }
 
 .path-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .path-card {
@@ -575,8 +575,8 @@ a {
 }
 
 .path-card strong {
-  max-width: 260px;
-  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  max-width: 250px;
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem);
   line-height: 1;
 }
 
