@@ -1,7 +1,7 @@
 {
   "name": "Ken Haas",
-  "headline": "Executive IT leader driving impact through AI, cloud, security, transformation, and organizational change",
-  "summary": "Executive technology leader with 19+ years across cloud, cybersecurity, data, AI, customer success, and enterprise transformation. Ken builds adoption systems where people, platforms, partners, governance, and change leadership turn technology into measurable business outcomes.",
+  "headline": "Operating at the intersection of business and technology",
+  "summary": "Executive technology leader with 19+ years across cloud, cybersecurity, data, AI, customer success, and enterprise transformation. Ken helps large enterprises turn technology strategy into adoption, governance, operating change, and measurable business value.",
   "links": {
     "linkedin": "https://www.linkedin.com/in/kphaas/",
     "at0": "https://at-0.com/"
@@ -32,7 +32,7 @@
       "title": "Turn enterprise intent into durable adoption",
       "summary": "Ken's core lane is transformation at enterprise scale: translating executive priorities into cloud, cybersecurity, data, AI, operations, and organizational change with operating cadence and measurable outcomes.",
       "points": [
-        "Helped Charles River Development transform its application strategy toward the cloud.",
+        "Helped hundreds of Fortune 500 companies modernize IT across cloud, security, data, and AI-enabled operating models.",
         "Leads an $850M Azure commitment currently operating at about $17M monthly consumption.",
         "Led top-tier financial-market customer success across Azure, Modern Work, Dynamics, security, data, AI, adoption strategy, and business value realization."
       ],
@@ -89,8 +89,8 @@
       "tags": ["Governance", "Transformation"]
     },
     {
-      "label": "Charles River Development",
-      "text": "Helped Charles River Development move application transformation toward the cloud, connecting architecture, adoption, and executive alignment.",
+      "label": "Fortune 500 transformation",
+      "text": "Helped hundreds of Fortune 500 companies transform IT toward cloud, security, data, and AI-enabled operating models, connecting architecture, adoption, governance, and executive alignment.",
       "tags": ["Transformation", "Architecture"]
     },
     {

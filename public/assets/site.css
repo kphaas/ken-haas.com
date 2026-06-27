@@ -374,6 +374,128 @@ a {
   color: var(--muted);
 }
 
+.resume-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: 48px;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 86px 0 42px;
+  align-items: end;
+}
+
+.resume-hero h1 {
+  margin: 0;
+  max-width: 720px;
+  font-size: clamp(4.8rem, 13vw, 10.8rem);
+  line-height: 0.86;
+  letter-spacing: 0;
+}
+
+.resume-tagline {
+  max-width: 780px;
+  margin: 28px 0 0;
+  color: #171717;
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  font-weight: 760;
+  line-height: 1.06;
+  text-wrap: balance;
+}
+
+.resume-dek {
+  max-width: 680px;
+  margin: 22px 0 0;
+  color: #3e3e3e;
+  font-size: clamp(1.05rem, 1.7vw, 1.28rem);
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.resume-portrait {
+  position: relative;
+  margin: 0;
+  padding: 18px 18px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.resume-portrait:before {
+  content: "";
+  position: absolute;
+  inset: -22px -18px auto auto;
+  width: 126px;
+  height: 126px;
+  border: 18px solid var(--accent);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+}
+
+.resume-portrait img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);
+}
+
+.resume-portrait figcaption {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 16px 0 18px;
+  color: var(--muted);
+  font-weight: 720;
+  line-height: 1.25;
+}
+
+.resume-scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--ink);
+  background: var(--panel);
+}
+
+.resume-scoreboard article {
+  display: grid;
+  gap: 8px;
+  min-height: 142px;
+  align-content: center;
+  padding: 24px;
+  border-right: 1px solid var(--ink);
+}
+
+.resume-scoreboard article:last-child {
+  border-right: 0;
+}
+
+.resume-scoreboard strong {
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  line-height: 0.92;
+  font-variant-numeric: tabular-nums;
+}
+
+.resume-scoreboard span {
+  color: #3f3f3f;
+  font-weight: 640;
+  line-height: 1.35;
+}
+
+.resume-focus .section-head {
+  margin-bottom: 18px;
+}
+
 .resume-story,
 .ai-builder-proof {
   display: grid;
@@ -936,6 +1058,8 @@ textarea {
   .proof-grid,
   .case-study,
   .community-grid,
+  .resume-hero,
+  .resume-scoreboard,
   .resume-story,
   .ai-builder-proof,
   .keyword-board {
@@ -945,6 +1069,25 @@ textarea {
   .hero {
     min-height: auto;
     padding-top: 54px;
+  }
+
+  .resume-hero {
+    gap: 34px;
+    padding: 56px 0 28px;
+  }
+
+  .resume-portrait {
+    max-width: 360px;
+  }
+
+  .resume-scoreboard article {
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .resume-scoreboard article:last-child {
+    border-bottom: 0;
   }
 
   .portrait-stage {
@@ -997,6 +1140,23 @@ textarea {
   .nav-links {
     font-size: 0.86rem;
     gap: 10px;
+  }
+
+  .resume-hero {
+    gap: 24px;
+    padding-top: 42px;
+  }
+
+  .resume-hero h1 {
+    font-size: clamp(3.7rem, 19vw, 5.2rem);
+  }
+
+  .resume-tagline {
+    font-size: clamp(1.42rem, 7vw, 2rem);
+  }
+
+  .resume-portrait {
+    max-width: 270px;
   }
 
   .portrait-stage {
