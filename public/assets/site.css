@@ -708,14 +708,14 @@ a {
   gap: 48px;
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 86px 0 42px;
+  padding: 70px 0 34px;
   align-items: end;
 }
 
 .resume-hero h1 {
   margin: 0;
   max-width: 720px;
-  font-size: clamp(4.8rem, 13vw, 10.8rem);
+  font-size: clamp(4.4rem, 10vw, 8.5rem);
   line-height: 0.86;
   letter-spacing: 0;
 }
@@ -790,7 +790,7 @@ a {
 
 .resume-scoreboard {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   border: 1px solid var(--ink);
   background: var(--panel);
 }
@@ -800,7 +800,7 @@ a {
   gap: 8px;
   min-height: 142px;
   align-content: center;
-  padding: 24px;
+  padding: 20px;
   border-right: 1px solid var(--ink);
 }
 
@@ -809,13 +809,14 @@ a {
 }
 
 .resume-scoreboard strong {
-  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  font-size: clamp(1.65rem, 3vw, 2.85rem);
   line-height: 0.92;
   font-variant-numeric: tabular-nums;
 }
 
 .resume-scoreboard span {
   color: #3f3f3f;
+  font-size: 0.96rem;
   font-weight: 640;
   line-height: 1.35;
 }
@@ -866,9 +867,49 @@ a {
   color: var(--muted);
 }
 
+.proof-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) repeat(2, minmax(0, 0.92fr));
+  gap: 18px;
+}
+
+.proof-story {
+  display: grid;
+  gap: 16px;
+  min-height: 330px;
+  align-content: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.proof-story.primary {
+  background:
+    linear-gradient(135deg, rgba(243, 111, 33, 0.14), transparent 44%),
+    var(--panel);
+}
+
+.proof-story span {
+  color: var(--accent-dark);
+  font-weight: 780;
+}
+
+.proof-story h3 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+  line-height: 1;
+}
+
+.proof-story p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .keyword-board {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -1384,6 +1425,7 @@ textarea {
   .resume-layout,
   .split,
   .proof-grid,
+  .proof-story-grid,
   .case-study,
   .community-grid,
   .resume-hero,
@@ -1433,7 +1475,8 @@ textarea {
   }
 
   .overview-grid article,
-  .path-card {
+  .path-card,
+  .proof-story {
     min-height: 0;
   }
 
