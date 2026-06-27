@@ -54,6 +54,8 @@ class SiteContractTest(unittest.TestCase):
         timeline = (PUBLIC / "timeline" / "index.html").read_text()
         at0 = (PUBLIC / "at-0" / "index.html").read_text()
         self.assertIn("Career timeline", index)
+        self.assertIn("AT0 showcases that work", index)
+        self.assertIn("Showcase of my AI work", index)
         self.assertIn("data-lens-explorer", resume)
         self.assertIn("Walking-deck themes", timeline)
         self.assertIn("Empathy builds trust", timeline)
