@@ -1035,18 +1035,49 @@ a {
 }
 
 .at0-live-panel {
-  background: radial-gradient(circle at 75% 22%, rgba(98, 216, 196, 0.25), transparent 28%),
-    linear-gradient(145deg, #fff, #f4f1eb);
+  color: #f7f1e8;
+  border-color: rgba(255, 255, 255, 0.14);
+  background:
+    radial-gradient(circle at 72% 22%, rgba(255, 127, 34, 0.34), transparent 18%),
+    radial-gradient(circle at 48% 58%, rgba(255, 122, 24, 0.24), transparent 22%),
+    radial-gradient(circle at 78% 70%, rgba(98, 216, 196, 0.18), transparent 24%),
+    linear-gradient(145deg, #070b10, #101820 58%, #17110d);
+  box-shadow: 0 34px 80px rgba(7, 11, 16, 0.28);
+}
+
+.at0-live-panel::before {
+  content: "";
+  position: absolute;
+  inset: 34px;
+  z-index: 1;
+  border: 1px solid rgba(246, 167, 84, 0.28);
+  border-radius: 50%;
+  transform: translateX(12%) scale(1.08);
+}
+
+.at0-live-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 19% 70%, rgba(204, 57, 53, 0.8) 0 3px, transparent 4px),
+    radial-gradient(circle at 33% 56%, rgba(244, 118, 25, 0.85) 0 4px, transparent 5px),
+    radial-gradient(circle at 45% 48%, rgba(255, 171, 71, 0.95) 0 5px, transparent 6px),
+    radial-gradient(circle at 56% 58%, rgba(246, 238, 225, 0.95) 0 4px, transparent 5px),
+    radial-gradient(circle at 68% 43%, rgba(144, 96, 255, 0.75) 0 3px, transparent 4px),
+    radial-gradient(circle at 77% 71%, rgba(98, 216, 196, 0.8) 0 4px, transparent 5px);
+  opacity: 0.85;
 }
 
 .at0-live-panel img {
   position: absolute;
-  right: 34px;
-  top: 34px;
+  right: 40px;
+  top: 40px;
   z-index: 2;
-  width: 118px;
-  height: 118px;
-  filter: drop-shadow(0 18px 38px rgba(44, 51, 63, 0.16));
+  width: 132px;
+  height: 132px;
+  filter: drop-shadow(0 20px 44px rgba(255, 127, 34, 0.28));
 }
 
 .at0-mark-panel strong {
@@ -1057,6 +1088,8 @@ a {
   font-size: clamp(3rem, 8vw, 6rem);
   line-height: 0.9;
   letter-spacing: 0;
+  color: #fbf7ef;
+  text-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
 }
 
 .at0-mark-panel strong::after {
@@ -1072,14 +1105,55 @@ a {
 
 .architecture-lines {
   position: absolute;
-  inset: 34% 8% 8%;
+  inset: 28% 8% 16%;
+  z-index: 1;
   background:
-    linear-gradient(20deg, transparent 49%, rgba(23, 23, 23, 0.28) 50%, transparent 51%),
-    linear-gradient(-14deg, transparent 49%, rgba(23, 23, 23, 0.18) 50%, transparent 51%),
-    repeating-linear-gradient(90deg, rgba(23, 23, 23, 0.13) 0 1px, transparent 1px 46px),
-    repeating-linear-gradient(0deg, rgba(23, 23, 23, 0.12) 0 1px, transparent 1px 38px);
-  border-left: 6px solid var(--accent);
-  transform: skewY(-7deg);
+    linear-gradient(18deg, transparent 49%, rgba(255, 125, 34, 0.28) 50%, transparent 51%),
+    linear-gradient(-21deg, transparent 49%, rgba(206, 54, 48, 0.3) 50%, transparent 51%),
+    linear-gradient(146deg, transparent 49%, rgba(98, 216, 196, 0.22) 50%, transparent 51%),
+    repeating-radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.18) 0 1px, transparent 2px 28px);
+  border-radius: 50%;
+}
+
+.architecture-lines::before {
+  content: "";
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff5e4;
+  box-shadow:
+    -88px -18px 0 2px rgba(244, 118, 25, 0.86),
+    -55px 36px 0 3px rgba(255, 127, 34, 0.9),
+    -18px -46px 0 1px rgba(246, 238, 225, 0.8),
+    28px 31px 0 2px rgba(255, 177, 78, 0.9),
+    62px -28px 0 1px rgba(144, 96, 255, 0.8),
+    94px 44px 0 2px rgba(98, 216, 196, 0.82),
+    126px -4px 0 1px rgba(246, 238, 225, 0.75);
+}
+
+.memory-labels {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  bottom: 30px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.memory-labels span {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 8px 12px;
+  color: rgba(247, 241, 232, 0.86);
+  font-size: 0.78rem;
+  font-weight: 780;
+  text-transform: uppercase;
 }
 
 .signal-list {
@@ -1109,6 +1183,28 @@ a {
 
 .signal-list p {
   color: var(--muted);
+}
+
+.domain-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -12px 0 28px;
+}
+
+.domain-cloud span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  padding: 10px 14px;
+  color: var(--ink);
+  font-size: 0.94rem;
+  font-weight: 760;
+  box-shadow: 0 14px 32px rgba(23, 23, 23, 0.05);
+}
+
+.at0-coverage .grid {
+  margin-top: 22px;
 }
 
 .proof-grid {
