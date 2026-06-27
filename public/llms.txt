@@ -6,6 +6,7 @@ Public pages:
 
 - https://ken-haas.com/
 - https://ken-haas.com/resume/
+- https://ken-haas.com/timeline/
 - https://ken-haas.com/at-0/
 - https://ken-haas.com/community/
 - https://ken-haas.com/contact/
