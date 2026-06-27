@@ -32,7 +32,7 @@ class SiteContractTest(unittest.TestCase):
         return PUBLIC.joinpath(route, "index.html") if route else PUBLIC / "index.html"
 
     def test_pages_exist(self):
-        for route in ["", "resume", "at-0", "community", "contact"]:
+        for route in ["", "resume", "timeline", "at-0", "community", "contact"]:
             self.assertTrue(self.page(route).exists(), route)
 
     def test_resume_data_is_public_safe(self):
@@ -51,9 +51,12 @@ class SiteContractTest(unittest.TestCase):
     def test_interactive_resume_and_at0_link_exist(self):
         index = (PUBLIC / "index.html").read_text()
         resume = (PUBLIC / "resume" / "index.html").read_text()
+        timeline = (PUBLIC / "timeline" / "index.html").read_text()
         at0 = (PUBLIC / "at-0" / "index.html").read_text()
-        self.assertIn("data-lens-explorer", index)
+        self.assertIn("Career timeline", index)
         self.assertIn("data-lens-explorer", resume)
+        self.assertIn("Walking-deck themes", timeline)
+        self.assertIn("Empathy builds trust", timeline)
         self.assertIn("Visit at-0.com", at0)
         self.assertIn("AT0 logo", at0)
         self.assertNotIn("Interactive resume", resume)
@@ -93,7 +96,7 @@ class SiteContractTest(unittest.TestCase):
 
     def test_sitemap_covers_pages(self):
         sitemap = (PUBLIC / "sitemap.xml").read_text()
-        for route in ["", "resume/", "at-0/", "community/", "contact/"]:
+        for route in ["", "resume/", "timeline/", "at-0/", "community/", "contact/"]:
             self.assertIn(f"https://ken-haas.com/{route}", sitemap)
 
     def test_cloudflare_routes_existing_dns(self):
