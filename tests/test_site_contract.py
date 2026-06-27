@@ -80,6 +80,14 @@ class SiteContractTest(unittest.TestCase):
         self.assertNotIn("Executive resume", resume)
         self.assertNotIn("ATS keyword signal", resume)
         self.assertIn("1,000+ personal hours building AT-0", resume)
+        self.assertIn("Executive technology proof", resume)
+        self.assertIn("IT leadership knowledge", resume)
+        self.assertIn("Proof stories", resume)
+        self.assertIn("Builds the AI capability he advises on", resume)
+        self.assertIn("Cloud modernization and FinOps", resume)
+        self.assertIn("Cybersecurity and privacy", resume)
+        self.assertIn("IBM to MSFT", resume)
+        self.assertIn("financial-services sales motion designed from scratch", resume)
         self.assertIn("BESN.TV", (PUBLIC / "community" / "index.html").read_text())
 
     def test_resume_has_ats_keywords(self):
