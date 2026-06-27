@@ -44,7 +44,7 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("https://www.linkedin.com/in/kphaas/", text)
         self.assertIn("https://at-0.com/", text)
         self.assertIn("$850M", text)
-        self.assertIn("Charles River Development", text)
+        self.assertIn("Fortune 500", text)
         self.assertGreaterEqual(len(data["lenses"]), 4)
         self.assertTrue(any(lens["id"] == "governance" for lens in data["lenses"]))
 
@@ -57,8 +57,10 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Visit at-0.com", at0)
         self.assertIn("AT0 logo", at0)
         self.assertNotIn("Interactive resume", resume)
-        self.assertIn("ATS keyword signal", resume)
-        self.assertIn("1,000+ personal hours building with AI", resume)
+        self.assertIn("Operating at the intersection of business and technology", resume)
+        self.assertNotIn("Executive resume", resume)
+        self.assertNotIn("ATS keyword signal", resume)
+        self.assertIn("1,000+ personal hours building AT0", resume)
         self.assertIn("BESN.TV", (PUBLIC / "community" / "index.html").read_text())
 
     def test_resume_has_ats_keywords(self):
@@ -70,7 +72,7 @@ class SiteContractTest(unittest.TestCase):
             "SVP",
             "executive stakeholder management",
             "Execution",
-            "thought leadership",
+            "Thought leadership",
             "Responsible enterprise AI",
             "AI governance",
             "Azure",
