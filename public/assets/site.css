@@ -654,6 +654,12 @@ a {
   padding: 26px;
 }
 
+.theme-proof img {
+  display: block;
+  width: min(220px, 100%);
+  margin: 0 0 18px;
+}
+
 .theme-grid h3 {
   margin: 0 0 12px;
   font-size: 1.45rem;
