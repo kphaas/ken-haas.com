@@ -394,6 +394,40 @@ a {
   min-height: 460px;
 }
 
+.at0-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.at0-lockup img {
+  width: 72px;
+  height: 72px;
+}
+
+.at0-word {
+  color: #2c333f;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 820;
+  line-height: 1;
+}
+
+.at0-live-panel {
+  background: radial-gradient(circle at 75% 22%, rgba(98, 216, 196, 0.25), transparent 28%),
+    linear-gradient(145deg, #fff, #f4f1eb);
+}
+
+.at0-live-panel img {
+  position: absolute;
+  right: 34px;
+  top: 34px;
+  z-index: 2;
+  width: 118px;
+  height: 118px;
+  filter: drop-shadow(0 18px 38px rgba(44, 51, 63, 0.16));
+}
+
 .at0-mark-panel strong {
   position: absolute;
   left: 34px;

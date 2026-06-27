@@ -42,9 +42,9 @@
       "id": "governance",
       "label": "AI governance",
       "title": "Use AI where judgment, auditability, and safety stay visible",
-      "summary": "The through-line from enterprise leadership to AT-0 is governed automation: AI systems that accelerate work without hiding approvals, privacy boundaries, runtime truth, or human accountability.",
+      "summary": "The through-line from enterprise leadership to AT0 is governed automation: AI systems that accelerate work without hiding approvals, privacy boundaries, runtime truth, or human accountability.",
       "points": [
-        "Built AT-0 from scratch as a governed AI operating lab.",
+        "Built AT0 from scratch as a governed AI operating lab.",
         "Uses human-in-the-loop review for sensitive actions instead of silent mutation.",
         "Frames privacy, approvals, kill switches, and observability as product requirements."
       ],
@@ -83,7 +83,7 @@
     },
     {
       "label": "Governed AI builder",
-      "text": "Built AT-0 from scratch to prove AI capability through real product boundaries: approvals, privacy, memory, domain workflows, and operator review.",
+      "text": "Built AT0 from scratch to prove AI capability through real product boundaries: approvals, privacy, memory, domain workflows, and operator review.",
       "tags": ["Governance", "Transformation"]
     },
     {
@@ -113,7 +113,7 @@
       "tags": ["Transformation", "Architecture"]
     },
     {
-      "company": "AT-0",
+      "company": "AT0",
       "role": "Founder and builder",
       "period": "2024 - Present",
       "focus": "Built a governed AI operating lab from scratch to demonstrate practical AI capability, operator workflows, approval gates, memory, privacy boundaries, and domain-specific agents.",
@@ -155,24 +155,24 @@
   ],
   "at0": {
     "url": "https://at-0.com/",
-    "headline": "AT-0 is the build proof: governed AI from blank page to working operating system.",
-    "summary": "AT-0 demonstrates Ken's AI capability by turning leadership principles into a real product system: human-in-the-loop agents, domain-specific workflows, memory review, privacy boundaries, runtime checks, and Cloudflare-hosted public surfaces.",
+    "headline": "AT0 is the build proof: private AI from blank page to governed operating layer.",
+    "summary": "AT0, pronounced Auto, demonstrates Ken's AI capability through a real product system: persistent memory, specialized agents, domain isolation, human approval, private infrastructure, and no data resale.",
     "capabilities": [
       {
-        "label": "Operator control",
-        "text": "Helm-style UI patterns for Ask, review, inbox, memory, and operator handoff."
+        "label": "Private AI",
+        "text": "Big-AI capability shaped around owner-controlled infrastructure, memory, and rules."
       },
       {
-        "label": "Governed agents",
-        "text": "Approval gates, safety belts, kill switches, and no silent sensitive actions."
+        "label": "Persistent memory",
+        "text": "Working, episodic, and semantic memory so the system does not restart from zero."
       },
       {
-        "label": "Domain apps",
-        "text": "Family, financial, medical, talent, print, data-source, and Beacon-style workflows with explicit boundaries."
+        "label": "Domain isolation",
+        "text": "Family, financial, medical, home, creation, privacy, legal, documents, and calendar domains stay bounded."
       },
       {
-        "label": "Production habits",
-        "text": "Tests, PR gates, deployment checks, runtime truth, observability, and rollback paths."
+        "label": "Human approval",
+        "text": "High-stakes actions wait for review so autonomy remains accountable and observable."
       }
     ]
   },
