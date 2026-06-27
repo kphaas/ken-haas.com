@@ -42,11 +42,6 @@ function renderTimeline(data, filter = "All", root = document) {
     .join("");
 }
 
-function renderSkills(data) {
-  const skills = document.querySelector("[data-skills]");
-  if (skills) skills.innerHTML = data.skills.map((skill) => `<li>${skill}</li>`).join("");
-}
-
 function setupResumeFilters(data) {
   document.querySelectorAll("[data-resume-controls]").forEach((controls) => {
     const root = controls.closest("[data-resume-root]") || document;
@@ -62,33 +57,6 @@ function setupResumeFilters(data) {
     });
     renderHighlights(data, "All", root);
     renderTimeline(data, "All", root);
-  });
-}
-
-function renderLens(explorer, lens) {
-  const title = explorer.querySelector("[data-lens-title]");
-  const summary = explorer.querySelector("[data-lens-summary]");
-  const points = explorer.querySelector("[data-lens-points]");
-  if (title) title.textContent = lens.title;
-  if (summary) summary.textContent = lens.summary;
-  if (points) points.innerHTML = lens.points.map((point) => `<li>${point}</li>`).join("");
-}
-
-function setupLensExplorers(data) {
-  document.querySelectorAll("[data-lens-explorer]").forEach((explorer) => {
-    const controls = explorer.querySelector("[data-lens-controls]");
-    if (!controls) return;
-    controls.innerHTML = data.lenses.map((lens, index) => button(lens.label, "data-lens", lens.id, index === 0)).join("");
-    controls.addEventListener("click", (event) => {
-      const selected = event.target.closest("[data-lens]");
-      if (!selected) return;
-      const lens = data.lenses.find((item) => item.id === selected.dataset.lens);
-      if (!lens) return;
-      controls.querySelectorAll("[data-lens]").forEach((item) => item.setAttribute("aria-pressed", "false"));
-      selected.setAttribute("aria-pressed", "true");
-      renderLens(explorer, lens);
-    });
-    renderLens(explorer, data.lenses[0]);
   });
 }
 
@@ -131,11 +99,43 @@ function setupContactForm() {
   });
 }
 
+function setupResumeDialog() {
+  const dialog = document.querySelector("[data-resume-dialog]");
+  if (!dialog) return;
+
+  const kicker = dialog.querySelector("[data-dialog-kicker]");
+  const title = dialog.querySelector("[data-dialog-title]");
+  const body = dialog.querySelector("[data-dialog-body]");
+  const points = dialog.querySelector("[data-dialog-points]");
+
+  document.querySelectorAll("[data-resume-modal]").forEach((tile) => {
+    tile.addEventListener("click", () => {
+      if (kicker) kicker.textContent = tile.dataset.kicker || "";
+      if (title) title.textContent = tile.dataset.title || "";
+      if (body) body.textContent = tile.dataset.body || "";
+      if (points) {
+        points.innerHTML = "";
+        (tile.dataset.points || "").split("|").filter(Boolean).forEach((point) => {
+          const item = document.createElement("li");
+          item.textContent = point;
+          points.append(item);
+        });
+      }
+      if (dialog.showModal) dialog.showModal();
+      else dialog.setAttribute("open", "");
+    });
+  });
+
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog && dialog.close) dialog.close();
+  });
+}
+
+setupResumeDialog();
+
 loadResume()
   .then((data) => {
     setupResumeFilters(data);
-    setupLensExplorers(data);
-    renderSkills(data);
     renderStats(data);
     renderAt0(data);
     renderWriting(data);
