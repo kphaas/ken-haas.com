@@ -43,6 +43,8 @@ class SiteContractTest(unittest.TestCase):
         self.assertNotIn("@gmail.com", text)
         self.assertIn("https://www.linkedin.com/in/kphaas/", text)
         self.assertIn("https://at-0.com/", text)
+        self.assertIn("$850M", text)
+        self.assertIn("Charles River Development", text)
         self.assertGreaterEqual(len(data["lenses"]), 4)
         self.assertTrue(any(lens["id"] == "governance" for lens in data["lenses"]))
 
@@ -55,6 +57,8 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Visit at-0.com", at0)
         self.assertIn("AT0 logo", at0)
         self.assertNotIn("Interactive resume", resume)
+        self.assertIn("Career evidence", resume)
+        self.assertIn("BESN.TV", (PUBLIC / "community" / "index.html").read_text())
 
     def test_local_assets_resolve(self):
         for html_path in PUBLIC.glob("**/index.html"):

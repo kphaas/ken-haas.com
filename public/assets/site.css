@@ -305,6 +305,75 @@ a {
   background: #fff;
 }
 
+.editorial-statement {
+  display: grid;
+  gap: 26px;
+  padding-top: 34px;
+}
+
+.editorial-statement > p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.editorial-statement h2 {
+  max-width: 980px;
+  font-size: clamp(2.2rem, 5vw, 5.6rem);
+}
+
+.company-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.company-strip span,
+.contact-intents span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: var(--panel);
+  color: #343434;
+  font-weight: 720;
+}
+
+.case-study {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+  gap: 34px;
+  align-items: stretch;
+}
+
+.case-study p {
+  max-width: 720px;
+  margin: 22px 0 0;
+  color: #424242;
+  font-size: 1.2rem;
+}
+
+.case-study aside {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.case-study strong {
+  font-size: 1.3rem;
+}
+
+.case-study span {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+  color: var(--muted);
+}
+
 .resume-preview-grid {
   align-items: center;
 }
@@ -661,6 +730,29 @@ a {
   align-items: start;
 }
 
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.community-grid article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+
+.community-grid h2 {
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+}
+
+.community-grid p {
+  margin: 18px 0 0;
+  color: var(--muted);
+}
+
 .rule-list {
   display: grid;
   gap: 14px;
@@ -723,6 +815,13 @@ textarea {
   font-size: 0.94rem;
 }
 
+.contact-intents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
 .page-title {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
@@ -768,7 +867,9 @@ textarea {
   .section-head,
   .resume-layout,
   .split,
-  .proof-grid {
+  .proof-grid,
+  .case-study,
+  .community-grid {
     grid-template-columns: 1fr;
   }
 
