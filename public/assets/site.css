@@ -807,11 +807,75 @@ a {
   line-height: 1.25;
 }
 
+.resume-proof-card {
+  position: relative;
+  display: grid;
+  min-height: 330px;
+  align-content: space-between;
+  gap: 22px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(243, 111, 33, 0.13), transparent 44%),
+    var(--panel);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.resume-proof-card:before {
+  content: "";
+  position: absolute;
+  inset: -26px -20px auto auto;
+  width: 128px;
+  height: 128px;
+  border: 18px solid var(--accent);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+}
+
+.resume-proof-card img,
+.resume-proof-card div,
+.resume-proof-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.resume-proof-card img {
+  width: 58px;
+  height: 58px;
+}
+
+.resume-proof-card span {
+  color: var(--accent-dark);
+  font-weight: 820;
+}
+
+.resume-proof-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(1.75rem, 3.2vw, 2.55rem);
+  line-height: 0.98;
+}
+
+.resume-proof-card p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 680;
+  line-height: 1.35;
+}
+
 .resume-scoreboard {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   border: 1px solid var(--ink);
   background: var(--panel);
+}
+
+.section.resume-scoreboard {
+  padding: 0;
 }
 
 .resume-scoreboard article {
