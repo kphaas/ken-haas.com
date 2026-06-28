@@ -1,7 +1,7 @@
 {
   "name": "Ken Haas",
   "headline": "Operating at the intersection of AI, business, and transformation",
-  "summary": "Managing Director and senior IT executive with 20 years of experience across AI transformation, cloud modernization, cybersecurity, data strategy, customer success, governance, and enterprise operating change. Ken helps financial-services enterprises turn technology strategy into adoption, controls, measurable value, and durable transformation.",
+  "summary": "Managing Director and senior IT executive with 20 years of experience across AI transformation, cloud modernization, cybersecurity, data strategy, customer success, governance, and enterprise operating change. Ken helps financial-services enterprises turn technology strategy into adoption, controls, measurable value, and durable transformation, including daily client work around enterprise AI adoption and AI-enabled tooling for the Microsoft CSU organization.",
   "links": {
     "linkedin": "https://www.linkedin.com/in/kphaas/",
     "at0": "https://at-0.com/"
@@ -21,7 +21,7 @@
     },
     {
       "value": "MD/SVP",
-      "label": "target scope across AI, IT operations, and enterprise transformation leadership"
+      "label": "target scope across Chief AI Officer, AI, IT operations, and enterprise transformation leadership"
     }
   ],
   "filters": ["Transformation", "Governance", "Architecture", "Community"],
@@ -32,7 +32,8 @@
       "title": "Turn enterprise intent into durable adoption",
       "summary": "Ken's core lane is senior IT transformation at enterprise scale: translating executive priorities into AI, cloud, cybersecurity, data, operations, and organizational change with operating cadence and measurable outcomes.",
       "points": [
-        "Helped large enterprise and financial-services clients modernize IT across AI-enabled operating models, cloud, security, and data.",
+        "Works with enterprise clients daily on AI-enabled organizational transformation, cloud, security, data, and adoption.",
+        "Developed AI-enabled tooling for the Microsoft CSU organization.",
         "Leads an $850M Azure commitment currently operating at about $17M monthly consumption.",
         "Led top-tier financial-market customer success across Azure, Modern Work, Dynamics, security, data, AI, adoption strategy, and business value realization."
       ],
@@ -80,12 +81,12 @@
   "highlights": [
     {
       "label": "Enterprise transformation",
-      "text": "Leads IT transformation programs that connect executive priorities, AI adoption, partner motion, cloud modernization, controls, and organizational change across regulated financial-services environments.",
+      "text": "Leads IT transformation programs that connect executive priorities, AI adoption, partner motion, cloud modernization, controls, and organizational change across regulated financial-services environments, including daily client work on enterprise AI adoption.",
       "tags": ["Transformation", "Architecture"]
     },
     {
       "label": "Governed AI builder",
-      "text": "Built AT-0 from scratch through 1,000+ personal AI build hours, proving AI transformation capability through approvals, privacy, memory, domains, cost awareness, security, and operator review.",
+      "text": "Built AT-0 from scratch through 1,000+ personal AI build hours, proving enterprise-class AI transformation capability through approvals, privacy, memory, domains, cost awareness, security, and operator review.",
       "tags": ["Governance", "Transformation"]
     },
     {
@@ -109,7 +110,7 @@
       "company": "Microsoft",
       "role": "Managing Director of Customer Success",
       "period": "2022 - Present",
-      "focus": "Leads teams for adoption and business-value realization across Azure, AI, Modern Work, and Dynamics for top-tier financial-market clients. Current scope includes an $850M Azure commitment operating at about $17M monthly consumption.",
+      "focus": "Leads teams for adoption and business-value realization across Azure, AI, Modern Work, and Dynamics for top-tier financial-market clients. Current scope includes an $850M Azure commitment operating at about $17M monthly consumption, daily client work on enterprise AI adoption, and AI-enabled tooling for the Microsoft CSU organization.",
       "tags": ["Transformation", "Governance", "Architecture"]
     },
     {
@@ -152,6 +153,7 @@
     "Partner-led go-to-market",
     "Executive stakeholder management",
     "Managing Director",
+    "Chief AI Officer",
     "SVP IT operations",
     "Execution leadership",
     "Thought leadership",
@@ -183,12 +185,12 @@
   ],
   "at0": {
     "url": "https://at-0.com/",
-    "headline": "AT-0 is the build proof: private AI from platform to future company.",
+    "headline": "AT-0 is the build proof: enterprise-class private AI from platform to future company.",
     "summary": "AT-0, pronounced Auto, demonstrates Ken's AI transformation capability through a real product system: owner-controlled infrastructure, persistent memory, specialized agents, domain isolation, human approval, cost management, security-first design, and no data resale.",
     "capabilities": [
       {
-        "label": "Private infrastructure",
-        "text": "Advanced AI transformation capability shaped around owner-controlled infrastructure, memory, rules, and no data resale."
+        "label": "Enterprise control plane",
+        "text": "Advanced AI transformation capability shaped around owner-controlled infrastructure, agents, memory, rules, and no data resale."
       },
       {
         "label": "Memory architecture",
@@ -204,7 +206,7 @@
       },
       {
         "label": "Cost and usage control",
-        "text": "AI value is managed through usage visibility, governance, output quality, and rollout discipline."
+        "text": "AI value is managed through usage visibility, governance, output quality, rollout discipline, and cost-aware operating patterns."
       },
       {
         "label": "Security-first governance",
