@@ -1925,6 +1925,17 @@ textarea {
     min-height: 210px;
   }
 
+  .portrait-stage.compact .ring.one {
+    width: 320px;
+    height: 320px;
+  }
+
+  .portrait-stage.compact .ring.two {
+    width: 360px;
+    height: 360px;
+    right: -4%;
+  }
+
   .resume-hero {
     gap: 24px;
     padding-top: 34px;

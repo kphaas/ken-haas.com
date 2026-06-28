@@ -53,15 +53,24 @@ class SiteContractTest(unittest.TestCase):
         resume = (PUBLIC / "resume" / "index.html").read_text()
         timeline = (PUBLIC / "timeline" / "index.html").read_text()
         at0 = (PUBLIC / "at-0" / "index.html").read_text()
+        contact = (PUBLIC / "contact" / "index.html").read_text()
         self.assertIn("Career timeline", index)
         self.assertEqual(index.count('class="highlight-title'), 4)
         self.assertIn('class="button secondary at0-button" href="/at-0/"', index)
+        self.assertIn("AI transformation executive", index)
+        self.assertIn("My AI transformation thesis", index)
+        self.assertIn("How I lead governed AI transformation", index)
+        self.assertIn("Executive proof stories", index)
+        self.assertIn("Recognition and trust markers", index)
+        self.assertIn("Microsoft Platinum Club", index)
         self.assertIn("AI transformation leadership", index)
         self.assertIn("AI-first transformation capability", index)
         self.assertIn("Ken's AI-first transformation capability", index)
         self.assertLess(index.index("AI-first"), index.index("$850M"))
         self.assertIn("large financial enterprises", index)
         self.assertIn("20-year career runs from IBM to a Managing Director seat at Microsoft", index)
+        self.assertIn("clients daily on enterprise AI adoption", index)
+        self.assertIn("AI-enabled tool for the Microsoft CSU organization", index)
         self.assertIn("financial-services sales motion", index)
         self.assertIn('href="/at-0/"><img src="/assets/at0-logo.svg"', index)
         self.assertIn("multi-tier infrastructure, data privacy", index)
@@ -87,6 +96,11 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Visit at-0.com", at0)
         self.assertIn("<h1>AT-0</h1>", at0)
         self.assertIn("multi-node infrastructure", at0)
+        self.assertIn("enterprise-class proof of AI transformation capability", at0)
+        self.assertIn("Enterprise-class architecture lab", at0)
+        self.assertIn("Control plane", at0)
+        self.assertIn("Data privacy model", at0)
+        self.assertIn("Operational guardrails", at0)
         self.assertIn("AT-0 logo", at0)
         self.assertNotIn("See resume evidence", at0)
         self.assertIn("memory", at0)
@@ -110,17 +124,23 @@ class SiteContractTest(unittest.TestCase):
         self.assertNotIn("Executive resume", resume)
         self.assertNotIn("ATS keyword signal", resume)
         self.assertIn("1,000+ personal hours building AT-0", resume)
-        self.assertIn("Managing Director and senior IT executive", resume)
+        self.assertIn("Managing Director, AI transformation executive", resume)
+        self.assertIn("AI transformation executive", resume)
+        self.assertIn("Daily AI", resume)
+        self.assertIn("AI-enabled tooling for the Microsoft CSU organization", resume)
         self.assertIn("Explore the proof", resume)
         self.assertIn("senior IT executive story", resume)
         self.assertIn("Hands-on AI proof", resume)
         self.assertIn("Leads AI transformation with builder-level credibility", resume)
         self.assertIn("Cloud modernization and FinOps", resume)
         self.assertIn("Cybersecurity and privacy", resume)
-        self.assertIn("IBM to Microsoft", resume)
+        self.assertIn("enterprise AI adoption", resume)
         self.assertIn("20 years of experience leading AI transformation", resume)
         self.assertNotIn("19+", index + resume)
         self.assertIn("financial-services sales motion designed from scratch", resume)
+        self.assertIn("Chief AI Officer", contact)
+        self.assertIn("SVP IT leadership", contact)
+        self.assertIn("Board advisory", contact)
         community = (PUBLIC / "community" / "index.html").read_text()
         self.assertIn("BESN.TV", community)
         self.assertIn("Community leadership", community)
@@ -138,6 +158,7 @@ class SiteContractTest(unittest.TestCase):
         combined = resume + data
         for phrase in [
             "Managing Director",
+            "Chief AI Officer",
             "SVP",
             "Executive stakeholder management",
             "Execution",
@@ -148,8 +169,20 @@ class SiteContractTest(unittest.TestCase):
             "cybersecurity",
             "organizational change",
             "AT-0",
+            "Microsoft CSU organization",
         ]:
             self.assertIn(phrase, combined)
+
+    def test_cache_keys_are_consistent(self):
+        css_versions = set()
+        script_versions = set()
+        for html_path in PUBLIC.glob("**/index.html"):
+            html = html_path.read_text()
+            css_versions.update(re.findall(r"/assets/site\.css\?v=(\d+)", html))
+            script_versions.update(re.findall(r"/assets/site\.js\?v=(\d+)", html))
+        self.assertEqual(css_versions, {"17"})
+        self.assertEqual(script_versions, {"11"})
+        self.assertIn("/data/resume.json?v=10", (PUBLIC / "assets" / "site.js").read_text())
 
     def test_local_assets_resolve(self):
         for html_path in PUBLIC.glob("**/index.html"):
