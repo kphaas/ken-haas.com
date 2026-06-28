@@ -1,15 +1,15 @@
 {
   "name": "Ken Haas",
-  "headline": "Operating at the intersection of business and technology",
-  "summary": "Managing Director and executive technology leader with 19+ years across cloud, cybersecurity, data, AI, customer success, and enterprise transformation. Ken helps financial-services enterprises turn technology strategy into adoption, governance, operating change, and measurable business value.",
+  "headline": "Operating at the intersection of AI, business, and transformation",
+  "summary": "Managing Director and senior IT executive with 20 years of experience across AI transformation, cloud modernization, cybersecurity, data strategy, customer success, governance, and enterprise operating change. Ken helps financial-services enterprises turn technology strategy into adoption, controls, measurable value, and durable transformation.",
   "links": {
     "linkedin": "https://www.linkedin.com/in/kphaas/",
     "at0": "https://at-0.com/"
   },
   "stats": [
     {
-      "value": "19+",
-      "label": "years across cloud, cyber, data, AI, and customer success"
+      "value": "20 years",
+      "label": "professional experience across enterprise IT, cloud, security, data, AI, and customer success"
     },
     {
       "value": "$850M",
@@ -21,7 +21,7 @@
     },
     {
       "value": "MD/SVP",
-      "label": "target scope across AI, IT operations, and transformation leadership"
+      "label": "target scope across AI, IT operations, and enterprise transformation leadership"
     }
   ],
   "filters": ["Transformation", "Governance", "Architecture", "Community"],
@@ -30,9 +30,9 @@
       "id": "transformation",
       "label": "Transformation",
       "title": "Turn enterprise intent into durable adoption",
-      "summary": "Ken's core lane is transformation at enterprise scale: translating executive priorities into cloud, cybersecurity, data, AI, operations, and organizational change with operating cadence and measurable outcomes.",
+      "summary": "Ken's core lane is senior IT transformation at enterprise scale: translating executive priorities into AI, cloud, cybersecurity, data, operations, and organizational change with operating cadence and measurable outcomes.",
       "points": [
-        "Helped large enterprise and financial-services clients modernize IT across cloud, security, data, and AI-enabled operating models.",
+        "Helped large enterprise and financial-services clients modernize IT across AI-enabled operating models, cloud, security, and data.",
         "Leads an $850M Azure commitment currently operating at about $17M monthly consumption.",
         "Led top-tier financial-market customer success across Azure, Modern Work, Dynamics, security, data, AI, adoption strategy, and business value realization."
       ],
@@ -42,9 +42,9 @@
       "id": "governance",
       "label": "AI governance",
       "title": "Use AI where judgment, auditability, and safety stay visible",
-      "summary": "The through-line from enterprise leadership to AT-0 is responsible enterprise AI: systems that accelerate work without hiding approvals, privacy boundaries, cost control, security posture, runtime truth, or human accountability.",
+      "summary": "The through-line from enterprise leadership to AT-0 is responsible enterprise AI: systems that accelerate work while keeping approvals, privacy boundaries, cost control, security posture, runtime truth, and human accountability visible.",
       "points": [
-        "Built AT-0 from scratch as a governed AI project that can mature into a future company.",
+        "Built AT-0 from scratch as a governed AI platform that can mature into a future company.",
         "Invested 1,000+ personal hours building AI workflows, agents, domains, memory, and governance patterns.",
         "Uses human-in-the-loop review for sensitive actions instead of silent mutation.",
         "Frames privacy, approvals, cost control, security, kill switches, and observability as product requirements."
@@ -80,17 +80,17 @@
   "highlights": [
     {
       "label": "Enterprise transformation",
-      "text": "Leads customer success and transformation programs that connect executive priorities, partner motion, cloud adoption, and organizational change across regulated financial-services environments.",
+      "text": "Leads IT transformation programs that connect executive priorities, AI adoption, partner motion, cloud modernization, controls, and organizational change across regulated financial-services environments.",
       "tags": ["Transformation", "Architecture"]
     },
     {
       "label": "Governed AI builder",
-      "text": "Built AT-0 from scratch through 1,000+ personal AI build hours, proving AI capability through approvals, privacy, memory, domains, cost awareness, security, and operator review.",
+      "text": "Built AT-0 from scratch through 1,000+ personal AI build hours, proving AI transformation capability through approvals, privacy, memory, domains, cost awareness, security, and operator review.",
       "tags": ["Governance", "Transformation"]
     },
     {
       "label": "Large-enterprise transformation",
-      "text": "Helped large enterprise and financial-services clients transform IT toward cloud, security, data, and AI-enabled operating models, connecting architecture, adoption, governance, and executive alignment.",
+      "text": "Helped large enterprise and financial-services clients transform IT toward AI-enabled operating models, cloud, security, and data, connecting architecture, adoption, governance, and executive alignment.",
       "tags": ["Transformation", "Architecture"]
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "label": "Leadership principles",
-      "text": "Walking-deck themes: earn trust with empathy, incubate innovation through inclusion, produce clarity of vision, and keep improving by one percent.",
+      "text": "Leadership themes: earn trust with empathy, incubate innovation through inclusion, create clarity of vision, and keep improving by one percent.",
       "tags": ["Community", "Governance"]
     }
   ],
@@ -109,7 +109,7 @@
       "company": "Microsoft",
       "role": "Managing Director of Customer Success",
       "period": "2022 - Present",
-      "focus": "Leads customer success for top-tier financial-market clients across Azure, Modern Work, Dynamics, cybersecurity, data, AI, partner adoption, business value realization, and AI innovation. Current scope includes an $850M Azure commitment operating at about $17M monthly consumption.",
+      "focus": "Leads teams for adoption and business-value realization across Azure, AI, Modern Work, and Dynamics for top-tier financial-market clients. Current scope includes an $850M Azure commitment operating at about $17M monthly consumption.",
       "tags": ["Transformation", "Governance", "Architecture"]
     },
     {
@@ -122,8 +122,8 @@
     {
       "company": "AT-0",
       "role": "Founder and builder",
-      "period": "2024 - Present",
-      "focus": "Built a governed AI project from scratch, with a path toward a future company. The work demonstrates responsible AI, operator workflows, approval gates, memory, privacy, cost management, security-first thinking, and domain-specific agents.",
+      "period": "2025 - Present",
+      "focus": "Built a governed AI platform from scratch, with a path toward a future company. The work demonstrates responsible AI, operator workflows, approval gates, memory, privacy, cost management, security-first thinking, and domain-specific agents.",
       "tags": ["Governance", "Architecture"]
     },
     {
@@ -183,12 +183,12 @@
   ],
   "at0": {
     "url": "https://at-0.com/",
-    "headline": "AT-0 is the build proof: private AI from project to future company.",
-    "summary": "AT-0, pronounced Auto, demonstrates Ken's AI capability through a real product system: owner-controlled infrastructure, persistent memory, specialized agents, domain isolation, human approval, cost management, security-first design, and no data resale.",
+    "headline": "AT-0 is the build proof: private AI from platform to future company.",
+    "summary": "AT-0, pronounced Auto, demonstrates Ken's AI transformation capability through a real product system: owner-controlled infrastructure, persistent memory, specialized agents, domain isolation, human approval, cost management, security-first design, and no data resale.",
     "capabilities": [
       {
         "label": "Private infrastructure",
-        "text": "Advanced AI capability shaped around owner-controlled infrastructure, memory, rules, and no data resale."
+        "text": "Advanced AI transformation capability shaped around owner-controlled infrastructure, memory, rules, and no data resale."
       },
       {
         "label": "Memory architecture",

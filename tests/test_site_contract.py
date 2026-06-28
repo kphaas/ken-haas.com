@@ -56,12 +56,12 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Career timeline", index)
         self.assertEqual(index.count('class="highlight-title'), 4)
         self.assertIn('class="button secondary at0-button" href="/at-0/"', index)
-        self.assertIn("AI-first leadership", index)
+        self.assertIn("AI transformation leadership", index)
         self.assertIn("AI-first transformation capability", index)
         self.assertIn("Ken's AI-first transformation capability", index)
         self.assertLess(index.index("AI-first"), index.index("$850M"))
         self.assertIn("large financial enterprises", index)
-        self.assertIn("Managing Director seat at Microsoft", index)
+        self.assertIn("20-year career from IBM to a Managing Director seat at Microsoft", index)
         self.assertIn("financial-services sales motion", index)
         self.assertIn('href="/at-0/"><img src="/assets/at0-logo.svg"', index)
         self.assertIn("multi-tier infrastructure, data privacy", index)
@@ -102,18 +102,20 @@ class SiteContractTest(unittest.TestCase):
         self.assertIn("Forge, Warden, Smithy, Crucible, Spark, and Herald", at0)
         self.assertIn("data boundaries", at0)
         self.assertNotIn("Interactive resume", resume)
-        self.assertIn("Operating at the intersection of business and technology", resume)
+        self.assertIn("Operating at the intersection of AI, business, and transformation", resume)
         self.assertNotIn("Executive resume", resume)
         self.assertNotIn("ATS keyword signal", resume)
         self.assertIn("1,000+ personal hours building AT-0", resume)
-        self.assertIn("Managing Director and executive technology leader", resume)
+        self.assertIn("Managing Director and senior IT executive", resume)
         self.assertIn("Explore the proof", resume)
-        self.assertIn("senior IT leadership story", resume)
+        self.assertIn("senior IT executive story", resume)
         self.assertIn("Hands-on AI proof", resume)
         self.assertIn("Leads AI transformation with builder-level credibility", resume)
         self.assertIn("Cloud modernization and FinOps", resume)
         self.assertIn("Cybersecurity and privacy", resume)
-        self.assertIn("IBM to MSFT", resume)
+        self.assertIn("IBM to Microsoft", resume)
+        self.assertIn("20 years of experience leading AI transformation", resume)
+        self.assertNotIn("19+", index + resume)
         self.assertIn("financial-services sales motion designed from scratch", resume)
         community = (PUBLIC / "community" / "index.html").read_text()
         self.assertIn("BESN.TV", community)
@@ -133,7 +135,7 @@ class SiteContractTest(unittest.TestCase):
         for phrase in [
             "Managing Director",
             "SVP",
-            "executive stakeholder management",
+            "Executive stakeholder management",
             "Execution",
             "Thought leadership",
             "Responsible enterprise AI",
