@@ -1429,6 +1429,150 @@ a {
   margin-top: 22px;
 }
 
+.architecture-lab .section-head {
+  align-items: center;
+}
+
+.lab-diagram {
+  position: relative;
+  min-height: 270px;
+  margin-top: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(243, 111, 33, 0.28), transparent 16%),
+    radial-gradient(circle at 75% 25%, rgba(98, 216, 196, 0.16), transparent 20%),
+    linear-gradient(145deg, #080c11, #101820 58%, #17110d);
+  box-shadow: 0 26px 70px rgba(7, 11, 16, 0.22);
+  color: #f8f2e8;
+}
+
+.lab-diagram::before {
+  content: "";
+  position: absolute;
+  inset: 42px;
+  border: 1px solid rgba(246, 167, 84, 0.26);
+  border-radius: 50%;
+}
+
+.lab-diagram::after {
+  content: "";
+  position: absolute;
+  inset: 70px 92px;
+  border: 1px solid rgba(98, 216, 196, 0.18);
+  border-radius: 50%;
+  transform: rotate(-18deg);
+}
+
+.lab-diagram strong,
+.lab-node,
+.lab-line {
+  position: absolute;
+}
+
+.lab-diagram strong {
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  min-width: 96px;
+  min-height: 48px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--ink);
+  transform: translate(-50%, -50%);
+}
+
+.lab-line {
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 42%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(243, 111, 33, 0.68), rgba(98, 216, 196, 0.08));
+  transform-origin: 0 50%;
+}
+
+.lab-line.one {
+  transform: rotate(22deg);
+}
+
+.lab-line.two {
+  transform: rotate(156deg);
+}
+
+.lab-node {
+  z-index: 2;
+  display: grid;
+  min-width: 112px;
+  min-height: 38px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(248, 242, 232, 0.9);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.lab-node.outcome { left: 9%; top: 16%; }
+.lab-node.data { right: 9%; top: 16%; }
+.lab-node.agents { left: 10%; bottom: 16%; }
+.lab-node.controls { right: 9%; bottom: 16%; }
+
+.lab-card-grid article {
+  position: relative;
+  overflow: hidden;
+  padding-top: 92px;
+}
+
+.lab-card-mark {
+  position: absolute;
+  left: 24px;
+  top: 22px;
+  width: 88px;
+  height: 46px;
+  border: 1px solid rgba(184, 71, 16, 0.38);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 50%, var(--accent) 0 6px, transparent 7px),
+    linear-gradient(90deg, rgba(243, 111, 33, 0.12), transparent);
+}
+
+.lab-card-mark::before,
+.lab-card-mark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 1px;
+  background: rgba(184, 71, 16, 0.46);
+}
+
+.lab-card-mark::before {
+  right: 100%;
+}
+
+.lab-card-mark::after {
+  left: 100%;
+}
+
+.lab-card-mark.privacy {
+  border-radius: 8px;
+}
+
+.lab-card-mark.guardrails {
+  width: 70px;
+  border-radius: 8px 8px 22px 22px;
+}
+
+.lab-card-mark.translation {
+  border-radius: 8px;
+  transform: rotate(-3deg);
+}
+
 .proof-grid {
   display: grid;
   grid-template-columns: minmax(280px, 0.85fr) minmax(0, 1.15fr);
